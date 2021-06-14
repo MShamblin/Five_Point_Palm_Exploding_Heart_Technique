@@ -1,0 +1,53 @@
+# DEXVERSION=12.00.0323.000 2 2
+CheckActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+  MoveTo field 'Item Class Code' 
+  TypeTo field 'Item Class Code' , 'STD'
+  MoveTo field 'Decimal Places QTYS' item 1  # '0' 
+# Do you want to update the item with information from class STD?
+NewActiveWin dictionary 'default'  form DiaLog window DiaLog 
+  ClickHit field OK 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+# Do you want to update the item posting accounts and overhead defaults with costing information from class STD?
+NewActiveWin dictionary 'Manufacturing'  form DiaLog window DiaLog 
+  ClickHit field OK 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+  MoveTo field 'U Of M Schedule' 
+  TypeTo field 'U Of M Schedule' , 'EA'
+  MoveTo field 'Item Shipping Weight' 
+  CommandExec dictionary 'default'  form 'IV_Item_Maintenance' command 'Go To Button_w_IV_Item_Maintenance_f_IV_Item_Maintenance:Item Engineering Data:10' 
+# This item must be saved before opening the window.  Do you want to save the item?
+NewActiveWin dictionary 'Manufacturing'  form DiaLog window DiaLog 
+  ClickHit field OK 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+NewActiveWin dictionary 'Manufacturing'  form 'IV_MSTR_ENG' window 'IV_MSTR_ENG' 
+  MoveTo field 'Replenishment Method' item 2  # 'Buy' 
+  ClickHit field 'Replenishment Method' item 1  # 'Make' 
+  CommandExec dictionary 'Manufacturing'  form 'IV_MSTR_ENG' command 'IC_Save_T_w_IV_MSTR_ENG_f_IV_MSTR_ENG' 
+CloseWindow dictionary 'Manufacturing'  form 'IV_MSTR_ENG' window 'IV_MSTR_ENG' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+  MoveTo field 'Options Button P' 
+  ClickHit field 'Options Button P' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Additional_Info' 
+  MoveTo field 'Lookup Button 5' 
+  ClickHit field 'Lookup Button 5' 
+NewActiveWin dictionary 'SmartList'  form 'IV_User_Categories_Lookup' window 'IV_User_Categories_Lookup' 
+ActivateWindow dictionary 'SmartList'  form 'IV_User_Categories_Lookup' window 'IV_User_Categories_Lookup' 
+# Key 1: '2', '305602'
+  MoveTo line 5 browsewin 'IV_User_Categories_Scroll' 
+  CommandExec dictionary 'SmartList'  form 'IV_User_Categories_Lookup' command 'Select Button_w_IV_User_Categories_Lookup_f_IV_User_Categories_Lookup' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Additional_Info' 
+ActivateWindow dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Additional_Info' 
+  MoveTo field 'Lookup Button 6' 
+  ClickHit field 'Lookup Button 6' 
+NewActiveWin dictionary 'SmartList'  form 'IV_User_Categories_Lookup' window 'IV_User_Categories_Lookup' 
+ActivateWindow dictionary 'SmartList'  form 'IV_User_Categories_Lookup' window 'IV_User_Categories_Lookup' 
+# Key 1: '3', '306202'
+  MoveTo line 2 browsewin 'IV_User_Categories_Scroll' 
+  CommandExec dictionary 'SmartList'  form 'IV_User_Categories_Lookup' command 'Select Button_w_IV_User_Categories_Lookup_f_IV_User_Categories_Lookup' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Additional_Info' 
+ActivateWindow dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Additional_Info' 
+  CommandExec dictionary 'default'  form 'IV_Item_Maintenance' command 'OK Button_w_IV_Item_Additional_Info_f_IV_Item_Maintenance' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+  CommandExec dictionary 'default'  form 'IV_Item_Maintenance' command 'Save Button_w_IV_Item_Maintenance_f_IV_Item_Maintenance' 

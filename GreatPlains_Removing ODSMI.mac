@@ -1,0 +1,5 @@
+# DEXVERSION=18.00.0021.000 2 2
+CheckActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+  MoveTo field '(L) ConfigCode' item 0 
+  MoveTo field '(L) StringM41' 
+  CommandExec dictionary 'default'  form 'IV_Item_Maintenance' command 'Save Button_w_IV_Item_Maintenance_f_IV_Item_Maintenance' 

@@ -1,0 +1,11 @@
+# DEXVERSION=12.00.0323.000 2 2
+CheckActiveWin dictionary 'default'  form ivRPItemSiteMnt window ivRPItemSiteMnt 
+  MoveTo field '(L) Display Option' item 0  # 'Default Values' 
+  ClickHit field '(L) Display Option' item 1  # 'Site ID:' 
+  MoveTo field 'Next Button - Window Area' 
+  ClickHit field 'Next Button - Window Area' 
+  MoveTo field 'Order Policy' item 2  # 'Lot for Lot' 
+  ClickHit field 'Order Policy' item 4  # 'Period Order Quantity' 
+  MoveTo field 'Number of Days' 
+  TypeTo field 'Number of Days' , '5'
+  CommandExec dictionary 'default'  form ivRPItemSiteMnt command 'Save Button_w_ivRPItemSiteMnt_f_ivRPItemSiteMnt' 

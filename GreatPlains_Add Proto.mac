@@ -1,0 +1,67 @@
+# DEXVERSION=12.00.0323.000 2 2
+CheckActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+  MoveTo field 'Item Class Code' 
+  TypeTo field 'Item Class Code' , 'PROTO'
+  MoveTo field 'U Of M Schedule' 
+# Do you want to update the item with information from class PROTO?
+NewActiveWin dictionary 'default'  form DiaLog window DiaLog 
+  ClickHit field OK 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+# Do you want to update the item posting accounts and overhead defaults with costing information from class PROTO?
+NewActiveWin dictionary 'Manufacturing'  form DiaLog window DiaLog 
+  ClickHit field OK 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+  MoveTo field 'Options Button P' 
+  ClickHit field 'Options Button P' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Additional_Info' 
+  MoveTo field 'User Category Values'[2] 
+  TypeTo field 'User Category Values'[2] , 'PROTO'
+  CommandExec dictionary 'default'  form 'IV_Item_Maintenance' command 'OK Button_w_IV_Item_Additional_Info_f_IV_Item_Maintenance' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+  CommandExec dictionary 'default'  form 'IV_Item_Maintenance' command 'Go To Button_w_IV_Item_Maintenance_f_IV_Item_Maintenance:Item Engineering Data:10' 
+# This item must be saved before opening the window.  Do you want to save the item?
+NewActiveWin dictionary 'Manufacturing'  form DiaLog window DiaLog 
+  ClickHit field OK 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+NewActiveWin dictionary 'Manufacturing'  form 'IV_MSTR_ENG' window 'IV_MSTR_ENG' 
+  MoveTo field 'Replenishment Method' item 2  # 'Buy' 
+  ClickHit field 'Replenishment Method' item 1  # 'Make' 
+  CommandExec dictionary 'Manufacturing'  form 'IV_MSTR_ENG' command 'IC_Save_T_w_IV_MSTR_ENG_f_IV_MSTR_ENG' 
+CloseWindow dictionary 'Manufacturing'  form 'IV_MSTR_ENG' window 'IV_MSTR_ENG' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+  CommandExec dictionary 'default'  form 'IV_Item_Maintenance' command 'Go To Button_w_IV_Item_Maintenance_f_IV_Item_Maintenance:Item Resource Planning:8' 
+NewActiveWin dictionary 'default'  form ivRPItemSiteMnt window ivRPItemSiteMnt 
+ActivateWindow dictionary 'default'  form ivRPItemSiteMnt window ivRPItemSiteMnt 
+ActivateWindow dictionary 'default'  form ivRPItemSiteMnt window ivRPItemSiteMnt 
+  MoveTo field '(L) Display Option' item 0  # 'Default Values' 
+  ClickHit field '(L) Display Option' item 1  # 'Site ID:' 
+  MoveTo field 'Next Button - Window Area' 
+  ClickHit field 'Next Button - Window Area' 
+  MoveTo field 'Order Policy' item 2  # 'Lot for Lot' 
+  ClickHit field 'Order Policy' item 4  # 'Period Order Quantity' 
+  MoveTo field 'Number of Days' 
+  TypeTo field 'Number of Days' , '5'
+  CommandExec dictionary 'default'  form ivRPItemSiteMnt command 'Save Button_w_ivRPItemSiteMnt_f_ivRPItemSiteMnt' 
+CloseWindow dictionary 'default'  form ivRPItemSiteMnt window ivRPItemSiteMnt 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+  CommandExec dictionary 'default'  form 'IV_Item_Maintenance' command 'Go To Button_w_IV_Item_Maintenance_f_IV_Item_Maintenance:Quantities/Sites:3' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Qtys_Locs' window 'IV_Item_Qtys_Locs' 
+  ClickHit field '(L) Display Options' item 1  # 'Site ID:' 
+  MoveTo field 'Next Button - Window Area' 
+  ClickHit field 'Next Button - Window Area' 
+ActivateWindow dictionary 'default'  form 'IV_Item_Qtys_Locs' window 'IV_Item_Qtys_Locs' 
+  MoveTo field '(L) Bins Button' 
+  ClickHit field '(L) Bins Button' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Qtys_Locs' window ivItemSiteDefaultBins 
+  MoveTo field 'Material Issues Bin' 
+  TypeTo field 'Material Issues Bin' , 'PROTO'
+  MoveTo field 'MO Receipt Bin' 
+  TypeTo field 'MO Receipt Bin' , 'PROTO'
+  CommandExec dictionary 'default'  form 'IV_Item_Qtys_Locs' command 'OK Button_w_ivItemSiteDefaultBins_f_IV_Item_Qtys_Locs' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Qtys_Locs' window 'IV_Item_Qtys_Locs' 
+  CommandExec dictionary 'default'  form 'IV_Item_Qtys_Locs' command 'Save Button_w_IV_Item_Qtys_Locs_f_IV_Item_Qtys_Locs' 
+CloseWindow dictionary 'default'  form 'IV_Item_Qtys_Locs' window 'IV_Item_Qtys_Locs' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+  CommandExec dictionary 'default'  form 'IV_Item_Maintenance' command 'Save Button_w_IV_Item_Maintenance_f_IV_Item_Maintenance' 

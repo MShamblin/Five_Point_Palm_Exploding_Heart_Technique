@@ -1,0 +1,11 @@
+# DEXVERSION=12.00.0323.000 2 2
+CheckActiveWin dictionary 'Manufacturing'  form 'Labor_Code' window 'Labor_Code' 
+  MoveTo field 'Labor Code' 
+  MoveTo field 'Labor Code Description' 
+  MoveTo field 'Pay Code Rate 1' 
+  MoveTo field 'Pay Code Rate 2' 
+  MoveTo field 'Pay Code Rate 3' 
+  MoveTo field Cost 
+  TypeTo field Cost , '18.24430'
+  MoveTo field 'Hour Piece1' item 1  # 'Hour' 
+  CommandExec dictionary 'Manufacturing'  form 'Labor_Code' command 'IC_Save_w_Labor_Code_f_Labor_Code' 

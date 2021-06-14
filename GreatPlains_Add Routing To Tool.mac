@@ -1,0 +1,29 @@
+# DEXVERSION=12.00.0323.000 2 2
+CheckActiveWin dictionary 'Manufacturing'  form 'mfg_router' window RoutingEntry 
+  MoveTo field RoutingName 
+  TypeTo field RoutingName , 'STD'
+  MoveTo field rtseqnum 
+# This routing was not found. Do you want to create it?
+NewActiveWin dictionary 'Manufacturing'  form DiaLog window DiaLog 
+  ClickHit field OK 
+NewActiveWin dictionary 'Manufacturing'  form 'mfg_router' window RoutingEntry 
+NewActiveWin dictionary 'Manufacturing'  form 'mfg_router_edit_CreateRoutingHeader' window CreateRoutingHeader 
+  MoveTo field rtprimary  # 'FALSE'
+  ClickHit field rtprimary  # 'TRUE'
+  CommandExec dictionary 'Manufacturing'  form 'mfg_router_edit_CreateRoutingHeader' command 'IC_Save_w_CreateRoutingHeader_f_mfg_router_edit_CreateRoutingHeader' 
+NewActiveWin dictionary 'Manufacturing'  form 'mfg_router' window RoutingEntry 
+  TypeTo field rtseqnum , '0100'
+  MoveTo field rtseqdes 
+  TypeTo field rtseqdes , 'Machine As Required'
+  MoveTo field 'WC ID' 
+  TypeTo field 'WC ID' , 'TOOL'
+  MoveTo field Opcode 
+  MoveTo field LaborTime 
+  TypeTo field LaborTime , '000010'
+  MoveTo field 'Labor Code2' 
+  TypeTo field 'Labor Code2' , 'TOOL'
+  MoveTo field 'Number of Employees' 
+  TypeTo field 'Number of Employees' , '1'
+  MoveTo field CycleTime 
+  TypeTo field CycleTime , '000010'
+  CommandExec dictionary 'Manufacturing'  form 'mfg_router' command 'IC_Save_T_w_RoutingEntry_f_mfg_router' 

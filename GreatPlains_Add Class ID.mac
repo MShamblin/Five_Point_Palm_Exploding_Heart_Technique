@@ -1,0 +1,16 @@
+# DEXVERSION=12.00.0323.000 2 2
+CheckActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+  MoveTo field 'Item Class Code' 
+  TypeTo field 'Item Class Code' , 'BCKPLTASSY'
+  MoveTo field 'Purchase Tax Options' item 2  # 'Nontaxable' 
+# Do you want to update the item with information from class BCKPLTASSY?
+NewActiveWin dictionary 'default'  form DiaLog window DiaLog 
+  ClickHit field OK 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+# Do you want to update the item posting accounts and overhead defaults with costing information from class BCKPLTASSY?
+NewActiveWin dictionary 'Manufacturing'  form DiaLog window DiaLog 
+  ClickHit field OK 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+NewActiveWin dictionary 'default'  form 'IV_Item_Maintenance' window 'IV_Item_Maintenance' 
+  CommandExec dictionary 'default'  form 'IV_Item_Maintenance' command 'Save Button_w_IV_Item_Maintenance_f_IV_Item_Maintenance' 

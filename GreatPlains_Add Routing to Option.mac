@@ -1,0 +1,13 @@
+# DEXVERSION=12.00.0323.000 2 2
+CheckActiveWin dictionary 'Manufacturing'  form 'mfg_router' window RoutingEntry 
+  TypeTo field 'WC ID' , 'OPTION'
+  MoveTo field Opcode 
+  MoveTo field LaborTime 
+  TypeTo field LaborTime , '001670'
+  MoveTo field 'Labor Code2' 
+  TypeTo field 'Labor Code2' , 'OPTION'
+  MoveTo field 'Number of Employees' 
+  TypeTo field 'Number of Employees' , '6'
+  MoveTo field CycleTime 
+  TypeTo field CycleTime , '001670'
+  CommandExec dictionary 'Manufacturing'  form 'mfg_router' command 'IC_Save_T_w_RoutingEntry_f_mfg_router' 
