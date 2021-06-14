@@ -1,0 +1,1 @@
+Worksheets("Sheet1").Columns("C").Hidden = True
