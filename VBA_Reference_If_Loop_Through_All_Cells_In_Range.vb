@@ -1,4 +1,5 @@
 Sub If_Loop()
+
 Dim Cell as Range
  
   For Each Cell In Range("A2:A6")

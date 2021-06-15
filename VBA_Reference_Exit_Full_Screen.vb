@@ -1,0 +1,1 @@
+Application.DisplayFullScreen = False

@@ -4,7 +4,8 @@
 Dim cell As Range
  
 For Each cell In Range("A:A")
-    Ff cell.value <> "" then MsgBox cell.address &": " & cell.value
+    If cell.value <> "" then MsgBox cell.address &": " & cell.value
+
 Next cell
  
 End Sub
