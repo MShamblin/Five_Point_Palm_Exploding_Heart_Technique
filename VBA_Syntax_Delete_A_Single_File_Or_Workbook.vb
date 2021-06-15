@@ -1,0 +1,1 @@
+Kill "C:\VBA Folder\Sample File 1.xlsx"

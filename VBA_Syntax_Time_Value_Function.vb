@@ -1,0 +1,1 @@
+MsgBox TimeValue("21:30:57")

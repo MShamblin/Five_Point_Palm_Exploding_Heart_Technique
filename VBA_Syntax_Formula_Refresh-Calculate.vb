@@ -1,0 +1,1 @@
+Sheets("Sheet1").Range("a1:a10").Calculate

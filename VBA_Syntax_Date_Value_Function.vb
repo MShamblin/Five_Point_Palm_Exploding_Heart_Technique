@@ -1,0 +1,1 @@
+MsgBox DateValue("1/1/2010")

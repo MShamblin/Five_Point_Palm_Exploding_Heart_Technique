@@ -1,0 +1,1 @@
+RCol = ActiveSheet.UsedRange.Columns.Count
