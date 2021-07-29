@@ -1,0 +1,4 @@
+/* The CSS for the merged cells */
+th:first-child { vertical-align: bottom; }           /* bottom aligns "Book" */ 
+th:nth-child(2) { text-align: center; }               /* centers "Sales" */ 
+tr:nth-child(2) th { text-align: right; }              /* right aligns 2nd row hdgs */ 

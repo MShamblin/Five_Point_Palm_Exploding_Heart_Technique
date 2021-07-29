@@ -1,0 +1,26 @@
+/* CSS for the SlickNav menu */
+/* hide the mobile menu */ 
+#mobile_menu { display: none; } 
+. 
+.
+/* display the mobile menu */ 
+#mobile_menu { display: block; }
+
+
+/*
+Description 
+    • To use the SlickNav plugin, download the SlickNav-master.zip file 
+        from https://github.com/ComputerWolf/SlickNav. Then, unzip this 
+        file and add the slicknav.css and jquery.slicknav.min.js files to 
+        your website. 
+    • Before you can use the SlickNav plugin on a web page, you must include 
+        a link element for the slicknav.css file and a script element for 
+        the jquery.slicknav.min.js file. You must also include a script 
+        element for the jQuery core library, and this element must be coded 
+        before the script element for the jquery.slicknav.min.js file. 
+    • To use the SlickNav plugin, add a script element with the jQuery code 
+        shown above that refers to the element that contains the unordered 
+        list for the menu and the element for the mobile menu. Then, use the 
+        CSS display property to hide and display the mobile menu depending 
+        on the size of the screen.
+*/

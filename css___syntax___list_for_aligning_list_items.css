@@ -1,0 +1,31 @@
+/* CSS that aligns the list items */
+h2, ul, li { 
+	margin: 0; 
+	padding: 0;
+} 
+h2 { 
+	padding-bottom: .25em; 
+} 
+ul { 
+	padding-left: 1em; 
+} 
+li {
+	padding-left: .25em;        /* space between bullet and text */ 
+	padding-bottom: .25em;      /* space after line item */
+} 
+
+/*
+Description 
+• You can use margins and padding to control the indentation for 
+	the items in an ordered or unordered list, and to control the 
+	space between the bullets or numbers and the text that follows.
+• You can also use margins and padding to remove the indentation 
+	from the items in a list as shown above. However, this doesn’t 
+	work as well with ordered lists because the numbers or letters 
+	are aligned at the right.
+• You can remove the indentation from the descriptions in a description 
+	list by setting the left margin of the descriptions to zero.
+• These techniques work best if you specify the padding and 
+	margins using ems. 
+*/
+

@@ -1,0 +1,24 @@
+/* CSS that changes the bullets */
+ul.circle { list-style-type: circle; }
+ul.star { list-style-image: url("../images/star.png"); } 
+
+
+/*
+Description
+• You can change the bullet that’s displayed for an unordered 
+	list by using the list-style-type property. To display an 
+	image for the bullet, use the list-style-image property.
+
+Properties for formatting unordered lists
+list-style-type         Determines the type of bullet that’s used for the 
+                            items in the list. See the table below for 
+                            possible values. The default is disc.
+list-style-image        The URL for an image that’s used as the bullet
+
+Values for the list-style-type property of an unordered list 
+disc        solid circle
+circle      hollow circle 
+square      solid square
+none        no bullet 
+
+*/

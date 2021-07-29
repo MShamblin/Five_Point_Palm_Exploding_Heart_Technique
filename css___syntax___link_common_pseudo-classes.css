@@ -1,0 +1,16 @@
+
+/* Common CSS pseudo-classes */
+:link             A link that hasn’t been visited. By default, blue, underlined text.
+:visited          A link that has been visited. By default, purple, underlined text.
+:active           The active link (mouse button down but not released).  By default, red, underlined text.
+:hover            An element with the mouse hovering over it.  Code this after :link and :visited.
+:focus            An element like a link or form control that has the focus.
+
+/* Common CSS3 pseudo-classes */
+:first-child      The first child of an element.
+:last-child       The last child of an element.
+:only-child       The only child of an element.
+
+/* Common CSS3 pseudo-elements */
+::first-letter    The first letter of an element.
+::first-line      The first line of an element.

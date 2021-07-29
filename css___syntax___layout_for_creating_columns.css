@@ -1,0 +1,13 @@
+/* The CSS for creating the columns */
+article {
+	column-count: 2; 
+}
+
+
+/*
+Description 
+• In general, it’s best to float an image within the columns area to 
+	the left so it will be in the leftmost column. If you float it to 
+	the right, the browser will float the image to the right, but in 
+	the first column, which usually isn’t what you want.
+*/

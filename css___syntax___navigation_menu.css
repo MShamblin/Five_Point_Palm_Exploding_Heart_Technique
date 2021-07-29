@@ -1,0 +1,32 @@
+/* The CSS for the navigation menu */
+* { margin: 0; 
+    padding: 0; } 
+
+#nav_list ul {
+	list-style-type: none; 
+	margin-left: 1.25em; 
+	margin-bottom: 1.5em; } 
+	
+#nav_list ul li { 
+	width: 200px;
+	margin-bottom: .5em; 
+	border: 2px solid blue; } 
+	
+#nav_list ul li a { 
+	display: block;
+	padding: .5em 0 .5em 1.5em; 
+	text-decoration: none; 
+	font-weight: bold; 
+	color: blue; }
+#nav_list ul li a.current {
+	background-color: silver; }
+
+/*
+Description 
+• The HTML for a vertical navigation menu is best coded as a series of <a> 
+	elements within the li elements of an unordered list.
+• To make the entire box for a link clickable, you can set the display property 
+	for the <a> elements to block and use padding to provide the space around the links.
+• To show the users what page they’re on, it’s a good practice to highlight the 
+	current link. One way to do that is to apply a different background color to it.
+*/

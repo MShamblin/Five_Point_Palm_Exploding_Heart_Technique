@@ -1,0 +1,27 @@
+The CSS for the web page with absolute positioning 
+p { margin: 0;} 
+body {
+    width: 550px;
+    margin: 0 25px 20px; 
+    border: 1px solid black; 
+    position: relative;        /* not needed for fixed positioning */
+}   
+aside {
+    width: 80px; 
+    padding: 1em;
+    border: 1px solid black; 
+    position: absolute;         /* change to fixed for fixed positioning */ 
+    right: 30px; top: 50px; 
+}
+
+
+/*
+Description 
+• When you use absolute positioning, the remaining elements on 
+    the page are positioned as if the element weren’t there. 
+    As a result, you may need to make room for the positioned 
+    element by setting the margins or padding for other elements.
+• When you use fixed positioning for an element, the positioning 
+    applies to the browser window and the element doesn’t move 
+    even when you scroll.
+*/

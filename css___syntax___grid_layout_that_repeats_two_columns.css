@@ -1,0 +1,21 @@
+/* CSS that repeats two columns */
+main {
+	display: grid;
+	grid-template: repeat(2, 50px) / repeat(2, 50px 1fr); 
+	grid-gap: 20px; 
+}
+
+/*
+Description 
+• You can define the size of a grid track using any unit of measure, 
+	including the fr unit. • The minmax() function is typically used 
+	within the track list of the repeat() function to specify the minimum 
+	and maximum sizes of one or more tracks.
+• When you use the auto-fit keyword on the repeat() function, as many grid 
+	items as will fit in the available space will be placed in the container 
+	and they will be expanded when necessary to fit the available space.
+• The auto-fill keyword works like the auto-fit keyword until the available 
+	space is large enough to provide for additional minimum-sized grid 
+	items. Then, this keyword provides enough space for those items, even 
+	if the items aren’t declared in the HTML.
+*/

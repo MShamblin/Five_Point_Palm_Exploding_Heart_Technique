@@ -1,0 +1,19 @@
+/* The primary CSS3 properties for creating text columns 
+
+column-count        The number of columns that the text should be divided into. 
+column-gap          The width between the columns. Otherwise, this is set by default.
+column-rule         Defines a border between columns.
+column-span         With the value “all”, this property can be used to have an 
+                        element that’s a child of an element that’s formatted with 
+                        columns span all of the columns. Not currently supported by 
+                        Firefox.
+
+
+/*
+Description 
+• At this writing, Firefox doesn’t support the column-span property. 
+• If you want the heading of an article to span the columns, you can code 
+    the HTML for the heading before the article. Then, you don’t have to use 
+    the column-span property. 
+• If the columns are too narrow, an article becomes harder to read.
+*/

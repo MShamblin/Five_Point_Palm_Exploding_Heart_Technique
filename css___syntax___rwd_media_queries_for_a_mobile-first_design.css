@@ -1,0 +1,32 @@
+/* Common media queries for a mobile-first design */
+	/* mobile portrait layout (479px or less) */
+		...mobile portrait styles go here
+
+	/* mobile landscape layout (480px to 767px) */ 
+		@media only screen and (min-width: 480px) { 
+			...mobile landscape styles go here
+}
+	/* tablet portrait layout (768px to 959px) */ 
+		@media only screen and (min-width: 768px) { 
+			...tablet portrait styles go here
+}
+	/* tablet landscape and desktop layout (960px or more) */ 
+		@media only screen and (min-width: 960px) { 
+			...tablet landscape and desktop styles go here
+}
+
+/*
+Description 
+	• One standard technique for developing the media queries for a responsive design is 
+		to start with the queries for larger devices and then work your way down to smaller 
+		devices. 
+	• Another standard technique for developing media queries is to develop the design for 
+		the smallest mobile devices first and then work your way up to larger devices. 
+	• When you use the techniques shown above, each media query inherits the styles that 
+		precede it in the style sheet, including styles that are coded outside of media 
+		queries. Then, the media queries can override the inherited styles. 
+	• You can also code the starting set of styles in a media query. For a desktop-first 
+		design, you would code the styles in a media query that specifies a minimum width 
+		of 960 pixels. For a mobile-first design, you would code the styles in a media 
+		query that specifies a maximum width of 479 pixels.
+*/

@@ -1,0 +1,36 @@
+/* The CSS3 code for formatting a table without using classes */
+	th:first-child, td:first-child { 
+		text-align: left; }
+	th:nth-child(2), td:nth-child(2) { 
+		text-align: center; } 
+	tbody tr:nth-child(even) { 
+	background-color: silver; }
+
+
+/*
+The syntax for the CSS3 structural pseudo-class selectors 
+:nth-child(n)				nth child of parent
+:nth-last-child(n) 			nth child of parent counting backwards
+:nth-of-type(n)				nth element of its type within the parent
+:nth-last-of-type(n) 		nth element of its type counting backwards
+*/
+
+
+/*
+Typical n values
+odd			Every odd child or element
+even		Every even child or element
+n			The nth child or element 
+2n 			Same as even
+3n			Every third child or element (3, 6, 9, ...)
+2n+1 		Same as odd
+3n+1		Every third child or element starting with 1 (1, 4, 7, ...)
+*/
+
+/*
+Description 
+• The CSS3 structural pseudo-classes let you format a table without using classes or ids
+*/
+ 
+
+ 

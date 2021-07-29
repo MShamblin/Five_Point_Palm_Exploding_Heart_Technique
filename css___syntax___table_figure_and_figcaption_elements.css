@@ -1,0 +1,30 @@
+/* The CSS for the figure and figcaption elements */
+	figure {
+		float: left; 
+		margin-right: 1.5em; } 
+	figcaption {
+		display: block; 
+		font-weight: bold; 
+		padding-top: .25em; 
+		margin-bottom: 1em;
+		border-bottom: 1px solid black; }
+
+
+/*
+Description 
+• The figure element can be used as a container for anything that is used as a figure, like an image or a table.
+• The figcaption element can be used within a figure to provide a caption that describes the figure, but it is optional. 
+	When coded, it can be anywhere within the figure element.
+• By default, the figcaption element is an inline element so you usually need to change that.
+*/
+
+
+/*
+Description 
+• The figure element can be used as a container for anything that is used as a figure. 
+	The figcaption element can be used within a figure to provide a caption that 
+	describes the figure, but it is optional. When coded, it can be anywhere within the figure element.
+• By default, the figcaption element is an inline element. 
+• Although you can use the HTML caption element to provide a caption for a table, 
+	it’s better semantically to use the figure and figcaption elements.
+*/

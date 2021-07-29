@@ -1,0 +1,49 @@
+/* CSS that uses numbered grid lines to define the grid areas */
+body {
+	margin: 0; 
+	height: 600px; 
+	width: 100%; 
+	display: grid;
+	grid-template-columns: 200px 1fr 1fr; 
+	grid-template-rows: 80px 1fr 1fr 60px; 
+	grid-gap: 16px; 
+}
+header { 
+	grid-row:    1 / 2; 
+	grid-column: 1 / 4; 
+} 
+nav { 
+	grid-row:    2 / 4; 
+	grid-column: 1 / 2; 
+} 
+#s1 { 
+	grid-row:    2 / 3; 
+	grid-column: 2 / 4; 
+} 
+#s2 {
+	grid-row:    3 / 4; 
+	grid-column: 2 / 3; 
+}
+#s3 {
+	grid-row:    3 / 4; 
+	grid-column: 3 / 4; 
+} 
+footer { 
+	grid-row:    4 / 5; 
+	grid-column: 1 / 4;  
+}
+
+/*
+Properties for using numbered lines to define grid areas 
+grid-row 			The starting and ending line numbers for the rows 
+						of a grid area. 
+grid-column			The starting and ending line numbers for the columns 
+						of a grid area
+*/
+
+/*
+Description 
+• When you define a grid, each grid line is assigned a numeric value. You 
+	can use those numbers to identify the rows and columns for a grid area 
+	that an element occupies.
+*/

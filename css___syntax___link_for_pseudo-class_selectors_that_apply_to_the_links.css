@@ -1,0 +1,51 @@
+/*The CSS for pseudo-class selectors that apply to the links */
+
+a:link {
+    color: green; 
+} 
+a:hover, a:focus {
+    text-decoration: none; 
+    font-size: 125%;
+} 
+
+
+/*
+    Common CSS pseudo-classes for formatting links 
+    :link			A link that hasn’t been visited. Blue is the default color.
+    :visited 		A link that has been visited. Purple is the default color.
+    :hover 			An element with the mouse hovering over it. Hover has no default color.
+    :focus 			An element like a link or form control that has the focus.
+    :active			An element that’s currently active. Red is the default color.
+*/
+
+/*
+	Common CSS3 pseudo-classes
+	:first-child		The first child of an element. 
+	:last-child 		The last child of an element.
+	:only-child			The only child of an element.
+*/
+
+/*
+    Common pseudo-elements
+    ::first-letter      The first letter of an element. 
+    ::first-line        The first line of an element
+
+/* 
+    The properties for removing underlines and borders 
+    text-decoration 	To remove the underlining from a link, set this to none.
+    border-style		To remove the border from an image link, set this to none. 
+                            You can also set the border-width property to 0.
+*/
+
+/*
+Accessibility guideline 
+    • Apply the same formatting for the :hover and :focus selectors. 
+        That way, the formatting is the same whether you hover the mouse over 
+        a link or use the keyboard to tab to the link.
+*/
+
+/*
+Description 
+    • Pseudo-classes are predefined classes that apply to specific conditions. In contrast, 
+        pseudo-elements let you select a portion of text.
+*/

@@ -1,0 +1,8 @@
+/* The CSS for the positioned elements */
+aside {
+	width: 350px; 
+	padding: 20px;
+	background-color: #ffebc6; 
+	position: fixed; 
+	right: 0; top: 170px;
+}

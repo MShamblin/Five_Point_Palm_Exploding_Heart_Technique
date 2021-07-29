@@ -1,0 +1,4 @@
+/* The basic syntax of a media query */
+	@media [only] media-type [and (expression-1)] [and (expression-2)]... {
+	...styles go here
+}

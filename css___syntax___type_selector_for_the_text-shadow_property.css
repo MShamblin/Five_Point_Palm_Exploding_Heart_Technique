@@ -1,0 +1,33 @@
+/* The syntax of the text-shadow property */
+text-shadow: horizontalOffset verticalOffset blurRadius shadowColor;
+
+
+/* The h1 element */
+	<h1>San Joaquin Valley Town Hall</h1>
+	
+/* The CSS: */
+	h1 { 
+		color: #ef9c00; 
+		text-shadow: 4px 4px; }
+
+/* Different CSS for the same h1 element */
+	h1 {
+		color: blue; 
+		text-shadow: -2px -2px 4px red; } 
+
+
+/*
+Accessibility guideline 
+	• Remember the visually-impaired. Too much shadow or blur makes text harder to read.
+*/
+
+/*
+Description 
+	• Positive values offset the shadow to the right or down. Negative values offset the shadow 
+		to the left or up.
+	• The blur radius determines how much the shadow is blurred. • The text-shadow property is 
+		supported by all modern browsers. 
+	• If this property isn’t supported by a browser, it is ignored so there’s no shadow, which 
+		is usually okay.
+*/
+

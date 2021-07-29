@@ -1,0 +1,71 @@
+/*The CSS for a 12-column grid */
+
+
+body {
+    ... 
+    display: grid;
+    grid-template: repeat(4, auto) / repeat(12, 1fr);           /* 12 columns */ 
+    grid-gap: 1.5em;
+} 
+    
+header { 
+    grid-row: 1 / 2;                                            /* row 1 of the grid area */ 
+    grid-column: 1 / span 12;                                   /* all 12 columns */
+} 
+#nav_menu { 
+    grid-row: 2 / 3;                                            /* row 2 of the grid area */
+    grid-column: 1 / span 12;                                   /* all 12 columns */
+} 
+article {
+    margin-left: 3.4%; 
+    grid-row: 3 / 4;                                            /* row 3 of the grid area */ 
+    grid-column: 1 / span 7;                                    /* first 7 columns */
+}
+aside { 
+    ...
+    margin-right: 5%; 
+    grid-row: 3 / 4;                                            /* row 3 of the grid area */
+    grid-column: 8 / span 5;                                    /* all 12 columns */
+
+}
+footer { 
+    ...
+    grid-row: 4 / 5;                                            /* row 4 of grid area */ 
+    grid-column: 1 / span 12;                                   /* all 12 columns */
+}
+
+
+
+/* mobile landscape to tablet portrait */ 
+@media only screen and (max-width: 767px) { 
+    
+body {
+    ...
+    grid-template: repeat(5, auto) / 1fr;                       /* 5 rows and 1 column */
+    grid-gap: 0;
+} 
+header {
+    grid-column: 1 / 2;                                         /* 1 column */ 
+    ...
+}
+#mobile_menu {
+    display: block; 
+    grid-row: 2 / 3;                                            /* row 2 of the grid area */ 
+    grid-column 1 / 2;                                          /* 1 column */
+}
+article { 
+    ...
+    grid-row: 4 / 5;                                            /* row 4 of the grid area */ 
+    grid-column: 1 / 2;                                         /* 1 column */
+} 
+aside {
+    margin-right: 0; 
+    padding: 1em 2%; 
+    grid-row: 3 / 4;                                            /* row 3 of the grid area */ 
+    grid-column: 1 / 2;                                         /* column 1 */
+}
+    footer { 
+        grid-row: 5 / 6;                                        /* row 5 of the grid area */
+        grid-column: 1 / 2;                                     /* 1 column */
+    { 
+}

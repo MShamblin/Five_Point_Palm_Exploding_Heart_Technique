@@ -1,0 +1,30 @@
+/* CSS that specifies a text indent and horizontal alignment */
+	body {
+		font-size: 100%; 
+		margin: 2em; }
+	h1 { font-size: 180%; } 
+	main p { text-indent: 2em; } 
+	footer p {
+		font-size: 80%; 
+		text-align: right; }
+
+
+/*
+Properties for indenting, aligning, and decorating text 
+text-indent 		A relative or absolute value that determines the indentation for the first line of 
+						text. This property is inherited.
+text-align 			A keyword that determines the horizontal alignment of text. Possible values are left, 
+						center, right, and justify. This property is inherited.
+vertical-align		A relative or absolute value or a keyword that determines the vertical alignment of text. 
+						Possible keywords are baseline, bottom, middle, top, text-bottom, text-top, sub, 
+						and super.
+text-decoration 	A keyword that determines special decorations that are applied to text. Possible values 
+						are underline, overline, line-through, and none.
+/*
+
+/*
+Description 
+	• The text-indent and text-align properties are often used with text, and the vertical-align property 
+		is often used with tables.
+	• The text-decoration property is often set to “none” to remove the underlines from links.
+*/

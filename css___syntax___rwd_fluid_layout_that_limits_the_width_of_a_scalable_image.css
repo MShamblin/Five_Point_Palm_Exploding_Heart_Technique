@@ -1,0 +1,17 @@
+/* CSS that limits the width of the image */
+section img { 
+	width: 100%; 
+	max-width: 400px; 
+	margin-bottom: .5em;
+}
+
+/*
+Description 
+	• To create a scalable image, you remove any height and width attributes from the 
+		HTML for the image. In addition, you set the max-width property of the image 
+		to a percent of its containing block. 
+	• If you want to limit the size of an image to its native width, you can set the 
+		width property to a percent and then set the max-width property to the native 
+		width in pixels. That way, the quality of the image will be maintained.
+*/
+

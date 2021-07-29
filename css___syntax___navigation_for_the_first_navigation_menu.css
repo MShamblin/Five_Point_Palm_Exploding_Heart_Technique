@@ -1,0 +1,22 @@
+/* The CSS for the first navigation menu */
+#nav_menu ul {
+	list-style-type: none; 
+	padding: 1em 0;
+	text-align: center;
+	border-top: 2px solid black; 
+	border-bottom: 2px solid black; } 
+#nav_menu ul li { 
+	display: inline; 
+	padding: 0 1.5em; } 
+#nav_menu ul li a {
+	font-weight: bold; 
+	color: blue; }
+#nav_menu ul li a.current {
+	text-decoration: none; }
+
+/*
+Description 
+• You can code a horizontal navigation menu using an unordered list. 
+	You can do that by displaying the li elements inline or by floating 
+	the li elements.
+*/

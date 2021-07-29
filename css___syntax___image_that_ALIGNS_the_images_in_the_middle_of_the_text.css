@@ -1,0 +1,35 @@
+/* CSS that aligns the images in the middle of the text */
+	img {
+		vertical-align: middle; 
+margin-right: 10px; }
+
+/*
+Description 
+• If you use pixels, points, or ems to specify the value for the vertical-align property, 
+	the image is raised if the value is positive and lowered if it’s negative. 
+	If you specify a percent, the image is raised or lowered based on the percentage 
+	of the line height.
+• You can use margins, padding, and borders with images just like block elements
+*/
+
+/*
+The property for aligning images vertically
+
+ vertical-align				A relative or absolute value or a keyword that determines the vertical 
+ 							alignment of an image. See the table below for common keywords.
+*/
+
+
+
+/*
+Common keywords for the vertical-align property 
+
+bottom 						Aligns the bottom of the image box with the bottom of the box that contains the adjacent inline elements.
+middle 						Aligns the midpoint of the image box with the midpoint of the containing block.
+top 						Aligns the top of the image box with the top of the box that contains the adjacent in-line elements.
+text-bottom 				Aligns the bottom of the image box with the bottom of the text in the containing block.
+text-top					Aligns the top of the image box with the top of the text in the containing block.
+
+*/
+
+

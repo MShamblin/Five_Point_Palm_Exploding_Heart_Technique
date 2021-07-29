@@ -1,0 +1,35 @@
+/*The CSS for the web page for floating the sidebar */
+body { 
+    width: 500px; 
+} 
+main, aside, footer { 
+    margin: 0;
+    padding: 0px 20px; 
+} aside {
+    margin: 0 20px 10px; 
+    width: 150px; 
+    float: right;
+    border: 1px solid black; 
+} footer { 
+    clear: both; 
+}
+
+/*
+The properties for floating and clearing elements 
+float       A keyword that determines how an element is floated. Possible 
+                values are left, right, and none. None is the default.
+clear       Determines whether an element is cleared from flowing into 
+                the space left by a floated element. Possible values are 
+                left, right, both, and none (the default).
+*/
+
+/*
+Description 
+• When you float an element to the right or left, the content that follows 
+    flows around it. 
+• When you use the float property for an element, you also need to set its 
+    width. 
+• To stop the floating before an element, use the clear property. 
+• In the example above, if the clear property for the footer isn’t set, 
+    its content will flow into the space beside the floated element.
+*/

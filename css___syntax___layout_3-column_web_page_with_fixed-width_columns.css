@@ -1,0 +1,32 @@
+/* A 3-column web page with fixed-width columns */
+
+The critical CSS for the page 
+    body {
+        width: 964px;
+        background-color: white; 
+        margin: 15px auto;
+        border: 1px solid black; 
+    } 
+    #sidebarA {
+        width: 180px; 
+        height: 350px; 
+        float: left;
+    }
+    main {
+        width: 600px; 
+        float: left; 
+    }
+    #sidebarB {
+        width: 180px; 
+        height: 350px;                  /* to give the sidebar some height for its border */ 
+        float: right;
+        border-left: 2px solid #ef9c00; 
+    }
+    
+/*
+Description 
+• The first aside is floated to the left; the main content is floated 
+    to the left; and the second aside is floated to the right.
+• You could get the same result by floating both asides and the main 
+    content to the left
+*/

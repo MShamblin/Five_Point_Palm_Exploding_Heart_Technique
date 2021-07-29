@@ -1,0 +1,8 @@
+/* The syntax for HSL and HSLA colors */
+hsl(hue-degrees, saturation%, lightness%) 
+hsla(hue-degrees, saturation%, lightness%, opacity-value)
+
+
+h1 { color: hsl(120, 100%, 25%) }       /* dark green */ 
+h1 { color: hsl(120, 75%, 75%) }        /* pastel green */ 
+h1 { color: hsla(240, 100%, 50%, 0.5)  } /* semi-transparent solid blue */ 

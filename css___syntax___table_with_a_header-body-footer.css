@@ -1,0 +1,20 @@
+/* The CSS for a table with a header, body, and footer */
+	table {
+		border: 1px solid black; 
+		border-collapse: collapse; }
+	th, td {
+		border: 1px solid black; 
+		padding: .2em .7em; 
+		text-align: right; }
+	th.left, td.left { text-align: left; } 
+	thead, tfoot { background-color: aqua; } 
+    tfoot { font-weight: bold; }
+
+/*
+Common properties for formatting table, tr, th, and td elements 
+border-collapse 			A keyword that determines whether space exists between the borders of adjacent 
+								cells or the borders are collapsed to a single border between cells. Possible values are collapse and separate. The default is separate.
+border-spacing 				A relative or absolute value that specifies the space between cells when the borders aren’t collapsed.
+padding 					The space between the cell contents and the outer edge of the cell.
+text-align 					The horizontal alignment of text. 
+vertical-align				The vertical alignment of text.

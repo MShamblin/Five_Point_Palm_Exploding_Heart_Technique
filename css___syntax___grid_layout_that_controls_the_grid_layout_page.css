@@ -1,0 +1,35 @@
+/* The CSS that controls the page layout */
+/* the styles for the footer */ 
+footer {
+	...
+	grid-area: foot;                                            /* place the footer in a grid area */ 
+}  
+
+/* the media query for mobile landscape to tablet portrait */ 
+@media only screen and (max-width: 767px) { 
+	body {
+		... 
+		grid-gap: 0;                                            /* no space between the menu and main */ 
+	} 
+	header {
+		padding-bottom: 1.5em;                                  /* because there's no row gap */ 
+		display: grid;                                          /* make the header a grid */ 
+		grid-template: repeat(3, auto) / 1fr;                   /* 3 rows and 1 column */ 
+		grid-gap: .3em;                                         /* gap between rows */
+		justify-items: center;                                  /* center grid items horizontally */ 
+	} 
+	#mobile_menu {
+		display: block; 
+		grid-area: navi;                                        /* place the mobile menu in a grid area */
+	} 
+	main { 
+		margin: 0;
+		grid-template: auto auto / 1fr;                         /* 2 rows and 1 column */ 
+		grid-gap: 2%;                                           /* gap between rows */ 
+		grid-template-areas: "side" "arti";                     /* template areas */
+	} 
+	article { 
+		margin: 1.2em 2%; 
+	} 
+	aside { 
+		padding: 1em 2%; } }

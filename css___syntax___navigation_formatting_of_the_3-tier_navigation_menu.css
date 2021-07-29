@@ -1,0 +1,28 @@
+/* The CSS for formatting the menus */
+#nav_menu ul { 
+	margin: 0; 
+	padding: 0; }
+#nav_menu ul li a { 
+	text-align: center; 
+	display: block; 
+	width: 176px; 
+	padding: 1em 0;
+	text-decoration: none; 
+	background-color: blue; 
+	color: white;
+	font-weight: bold; }
+#nav_menu ul li.lastitem a { 
+	width: 178px; }                    /* So the navigation bar fills the 706px body width */ 
+#nav_menu ul li a.current { 
+	color: yellow; }
+#nav_menu ul li a:hover {
+	background-color: gray; } 
+#nav_menu ul li a:focus { 
+background-color: gray; }
+
+/*
+Description 
+• The CSS for the operation of this 3-tier menu will work for any 
+	3-tier menu like this one. It will also work for a 2-tier menu.
+• To add more tiers to a menu system, you continue the logic of the 3-tier menu.
+*/

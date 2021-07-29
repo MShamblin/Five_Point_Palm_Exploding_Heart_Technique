@@ -1,0 +1,21 @@
+/* CSS that formats the list */
+ol { list-style-type: lower-alpha; } 
+
+
+
+
+
+/*Common values for the list-style-type property of an ordered list 
+decimal                 1, 2, 3, 4, 5 ...
+decimal-leading-zero    01, 02, 03, 04, 05 ... 
+lower-alpha             a, b, c, d, e ...
+upper-alpha             A, B, C, D, E ...
+lower-roman             i, ii, iii, iv, v ...
+upper-roman             I, II, III, IV, V ...
+*/
+
+/*
+Description 
+• You can change the numbering system that’s used for an ordered 
+    list using the list-style-type property. The default is decimal
+*/

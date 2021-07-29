@@ -1,0 +1,13 @@
+/*Grid layout terms 
+• A grid consists of a grid container with one or more columns and rows. 
+• A grid track is a column or row within the grid container. 
+• The lines on each side of the grid tracks are called grid lines. 
+• A grid cell is the space made up by two adjacent row and column grid lines. 
+• A grid area is a rectangular area that consists of one or more grid cells.
+
+Description 
+• Grid Layout, or grid, is a 2-dimensional layout module in CSS3 that allows 
+    you to lay out web pages in a more efficient and familiar way.
+• In a simple layout, each cell of a grid can contain a grid item. In a more 
+    complex layout, you define grid areas that contain the grid items.
+*/

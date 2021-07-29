@@ -1,0 +1,19 @@
+/* The CSS for the image rollover */
+	#image1 {
+		background-image: url("h1.jpg"); 
+		width: 434px; 
+		height: 312px;
+		} 
+	#image1:hover { 
+		background-image: url("h2.jpg"); 
+	}
+
+
+/*
+Description 
+• An image rollover is an image that gets changed when the mouse hovers over it. 
+• One way to do image rollovers is to use background images and the :hover pseudo-class selector.
+• When you use this method, the first background image is applied to a block element like a 
+	<p> element. Then, the second background image is displayed when the mouse hovers over it.
+*/
+

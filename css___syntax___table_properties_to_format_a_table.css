@@ -1,0 +1,69 @@
+/*  How to use CSS properties to format a table  */
+
+/*The CSS for the table*/
+    table {
+        border: 1px solid black; 
+        border-collapse: collapse; 
+    }
+    th, td {
+        border: 1px solid black; 
+        padding: .2em .7em; 
+        text-align: right; 
+    }
+    th.left, td.left { 
+        text-align: left; 
+    } 
+    thead, tfoot { 
+        background-color: aqua; 
+    } 
+    tfoot { 
+        font-weight: bold; 
+    }
+
+/*
+The syntax for the CSS3 structural pseudo-class selectors 
+:nth-child(n)				nth child of parent
+:nth-last-child(n) 			nth child of parent counting backwards
+:nth-of-type(n)				nth element of its type within the parent
+:nth-last-of-type(n) 		nth element of its type counting backwards
+*/
+
+
+/*
+Typical n values
+odd			Every odd child or element
+even		Every even child or element
+n			The nth child or element 
+2n 			Same as even
+3n			Every third child or element (3, 6, 9, ...)
+2n+1 		Same as odd
+3n+1		Every third child or element starting with 1 (1, 4, 7, ...)
+*/
+
+/*
+Description 
+• The CSS3 structural pseudo-classes let you format a table without using classes or ids
+*/
+
+
+/*
+A table doesn’t include borders by default (the border around those tables were added by the 
+    program that we use for capturing screens). In many cases, though, you’ll want to add a 
+    border around a table to make it stand out on the page. You may also want to add borders 
+    around the cells or rows in a table to help identify the columns and rows. 
+In the CSS in this figure, for example, the shorthand border property adds a solid black 
+    border around the table and around each cell in the table. 
+By default, a small amount of space is included between the cells of a table. To remove 
+    that space, you can set the border-collapse property to a value of “collapse”. Then, 
+    the borders between adjacent cells will be collapsed to a single border as shown in 
+    the first table in this figure. But note that if two adjacent cells have different 
+    borders, the most dominant border will be displayed. If one border is wider than the 
+    other, for example, the wider border will be displayed. When you use the padding property
+    with tables, it works similarly to the way it works with the box model. That is, it 
+    specifies the amount of space between the contents of a cell and the outer edge of the 
+    cell. 
+To complete the formatting, the CSS left aligns those elements that are in the “left” class. 
+    Then, it applies a background color to the header and footer using a selector that 
+    includes the thead and tfoot element. And it changes the font weight for the footer 
+    to bold. 
+*/

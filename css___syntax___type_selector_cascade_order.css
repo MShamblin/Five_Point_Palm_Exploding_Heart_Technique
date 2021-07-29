@@ -1,0 +1,39 @@
+/* Cascade Order */
+
+/*
+The cascade order for applying CSS style rules 
+Search for the style rules that apply to an element in the sequence that follows and apply the 
+style rule from the first group in which it’s found: 
+    • !important declarations in a user style sheet 
+    • !important declarations in a web page 
+    • Normal declarations in a web page 
+    • Normal declarations in a user style sheet 
+    • Default declarations in the web browser
+*/
+/*
+If more than one style rule at a cascade level is applied to an element... 
+    • Use the style rule with the highest specificity. For example, the p.highlight selector is more 
+        specific than the .highlight selector.
+    • If the specificity is the same for two or more style rules in a group, use the style rule that’s 
+        specified last.
+*/
+
+/*
+How to determine the specificity of a selector 
+    • An id is the most specific. 
+    • A class, attribute selector, or pseudo-class selector is less specific. 
+    • An element or pseudo-element selector is least specific.
+*/
+
+/*
+Description 
+    • When two or more style rules are applied to an HTML element, CSS uses the cascade order and 
+        rules shown above to determine which style rule to apply.
+    • A user can create a user style sheet that provides a default set of style rules for web pages. 
+        Users with poor vision often do this so the type for a page is displayed in a large font.
+    • Since most users don’t create user style sheets, you usually can control the way the style 
+        rules are applied for your websites. But you should keep in mind how your web pages could be 
+        affected by user style sheets.
+    • If you want to create or remove a user style sheet for a browser, you can search the Internet 
+        for the procedures that your browser requires.
+*/

@@ -1,0 +1,25 @@
+/* How to specify the font size */
+	font-size: 12pt;       /* in points */
+	font-size: 150%;       /* as a percent of the parent element */
+	font-size: 1.5em;      /* same as 150% */
+
+
+/*
+The five generic font families
+serif			Fonts with tapered, flared, or slab stroke ends.
+sans-serif 		Fonts with plain stroke ends.
+monospace		Fonts that use the same width for each character.
+cursive 		Fonts with connected, flowing letters that look like handwriting.
+fantasy			Fonts with decorative styling.
+*/
+
+/*
+Description 
+	• The fonts specified for the font-family property are searched in the order listed. If you 
+		include a font name that contains spaces, the name must be enclosed in quotes.
+	• If you specify a generic font last and the web browser can’t find any of the other fonts 
+		in the list, it will use its default font for the generic font that you specified.
+	• The font properties that you set for an element are inherited by all of its descendants.
+	• If you use relative font sizes, the users will be able to vary the sizes by using their 
+		browsers. If you use pixels, the font size will vary based on the screen resolution.
+*/

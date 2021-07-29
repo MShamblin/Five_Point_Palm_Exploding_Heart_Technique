@@ -1,0 +1,4 @@
+/* How to identify a declaration as important */
+.highlight {
+	font-weight: bold !important; 
+}

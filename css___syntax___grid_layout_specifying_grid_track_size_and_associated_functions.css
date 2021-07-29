@@ -1,0 +1,29 @@
+/* Specifying Grid Track Size UOM and Associated Functions */
+A unit of measure for specifying the size of grid tracks 
+fr      Represents a fraction of the available space in a grid container. Use this unit 
+            when building fluid grid layouts or layouts with a combination of fixed and 
+            fluid tracks.
+
+
+
+Functions for specifying the size of one or more grid tracks
+repeat(repeat, track-list)      Repeats one or more track sizes in the track list. The 
+                                    repeat value can be a positive integer or the keywords 
+                                    auto-fill or auto-fit. 
+minmax(min, max)                The minimum and maximum size for a grid track.
+
+/*
+Instead of specifying the number of times that tracks will be repeated by a repeat() function, 
+    you can use the auto-fit or auto-fill keywords to determine how many tracks are created. 
+
+When the width of the container can hold more than the number of minimum-width columns, both 
+    the auto-fit and the auto-fill keywords display all of the columns in one row. 
+    
+However, these keywords don’t display them the same way. 
+
+ -->    The auto-fit keyword expands the width of the columns to fit the width of the container. 
+ -->    The auto-fill keyword expands the columns until the width of the container is large enough 
+            to hold another minimum-width column, and then provides the space for that column.
+
+*/
+

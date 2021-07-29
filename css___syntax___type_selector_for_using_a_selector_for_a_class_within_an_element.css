@@ -1,0 +1,23 @@
+
+/*  Combinations of selectors   */
+
+
+/* A selector for a class within an element */
+ul.speakers { list-style-type: square; } 
+
+
+/*
+Description 
+    • To code a selector for an element and class, code the element name, a period, and the class name.
+    • To code multiple selectors for the same style rule, use commas to separate the selectors.
+    • To select all elements with a specific attribute, you can use an attribute selector that consists 
+        of the universal selector followed by the attribute name in brackets. You can also omit the 
+        universal selector when you code this type of selector.
+    • To select elements with a specific attribute, you can use an attribute selector that consists 
+        of the element followed by the attribute name within brackets.
+    • To select an element with a specific attribute value, you can use an attribute selector that 
+        consists of the element followed by the attribute name, an equal sign, and a value within 
+        quotation marks.
+    • When you’re coding the CSS for an HTML page, you usually don’t need attribute selectors. They’re 
+        more useful when you’re using JavaScript.
+*/

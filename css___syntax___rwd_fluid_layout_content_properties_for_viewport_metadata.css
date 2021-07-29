@@ -1,0 +1,31 @@
+/* Content properties for viewport metadata 
+
+width           The logical width of the viewport specified in pixels. You can also use the device-width 
+                    keyword to indicate that the viewport should be the width of the screen in CSS pixels 
+                    at a scale of 100%. 
+height          The logical height of the viewport specified in pixels. You can also use the device-height 
+                    keyword to indicate that the viewport should be the height of the screen in CSS pixels 
+                    at a scale of 100%. 
+initial-scale   A number that indicates the initial zoom factor that’s used to display the page. 
+minimum-scale   A number that indicates the minimum zoom factor for the page. 
+maximum-scale   A number that indicates the maximum zoom factor for the page.
+user-scalable   Indicates whether the user can zoom in and out of the viewport. Possible values are yes and no.
+*/
+
+
+
+/*
+A meta element that sets viewport properties 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+*/
+
+/*    
+Description 
+    • The viewport on a mobile device determines the content that’s displayed on the screen. It can be larger 
+        or smaller than the actual visible area of the screen.
+    • You use a meta element to control the viewport settings for a device. You add this element within the 
+        head element of a page.
+    • When you use media queries, you should set the width property of the content attribute to “device-width”, 
+        and you should set the initial-scale property to 1. You can also prevent or limit scaling with the 
+        user-scalable, minimum-scale, and maximum-scale properties.
+*/

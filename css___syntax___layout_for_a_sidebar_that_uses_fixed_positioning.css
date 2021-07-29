@@ -1,0 +1,24 @@
+/* A sidebar that uses fixed positioning */
+
+The CSS for the positioned elements 
+aside {
+    width: 350px; 
+    padding: 20px;
+    background-color: #ffebc6; 
+    position: fixed; 
+    right: 0; 
+    top: 170px;
+    }
+    
+/*
+Description 
+• Fixed positioning is used to fix the sidebar at the right side of 
+    the browser window so it’s always displayed in the window.
+• When the browser window is too narrow to display all of the elements 
+    on the page, the positioned sidebar will overlap the elements that 
+    aren’t positioned.
+• Because the sidebar on this page uses fixed positioning, it isn’t 
+    necessary to float the sidebar or the article.
+• When you use fixed positioning for an element, the 
+    element doesn’t move in the browser window, even when you scroll.
+*/

@@ -1,0 +1,10 @@
+/* The property that stops wrapping on a table */
+	table { white-space: nowrap; }
+
+/*
+Description 
+• You can use the white-space property to keep table data from wrapping if the table 
+	doesn’t fit in the browser window. To do that, code the value “nowrap” for this property.
+• You can code the white-space property for an entire table or individual cells. 
+
+*/

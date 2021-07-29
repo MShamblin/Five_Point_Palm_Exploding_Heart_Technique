@@ -1,0 +1,5 @@
+/*  The syntax for RGBA colors  */
+rgba(red%, green%, blue%, opacity-value)
+
+h1 { color: rgba(0, 0, 255, .2)        /* transparent blue */ } 
+

@@ -1,0 +1,29 @@
+/* How to specify font styles and variants */
+	font-style: italic; 
+	font-style: normal;         /* remove style */
+	font-variant: small-caps;
+
+
+/*
+Other properties for styling fonts
+font-style 			A keyword that determines how the font is slanted: normal, italic, and oblique. 
+font-weight 		A keyword or number that determines the boldness of the font: normal, bold, bolder, 
+						lighter, or multiples of 100 from 100 through 900, with 400 equivalent to normal. 
+						Bolder and lighter are relative to the parent element. 
+font-variant 		A keyword that specifies whether small caps will be used: normal and small-caps. 
+line-height			A relative or absolute value or a number that specifies the amount of vertical space 
+						for each line. The excess space is divided equally above and below the font.
+/*
+
+/*
+Description 
+	• You can set the font-style, font-weight, and font-variant properties to a value of “normal” to 
+		remove any formatting that has been applied to these properties. 
+	• The line-height property determines the spacing between lines within a block element. 
+	• If you specify just a number for the line-height property, the font size is multiplied by that 
+		value to determine the line height, and the multiplier is inherited by child elements. If you 
+		specify an absolute or relative size for the line-height property, the actual line height is 
+		inherited by child elements. 
+	• You can use the shorthand property for a font to set all six font properties with a single rule. 
+		When you use this property, the font-size and font-family properties are required
+*/

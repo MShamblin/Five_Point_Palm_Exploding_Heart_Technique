@@ -1,0 +1,5 @@
+/* All input elements with type attributes that have a value of “submit” */
+input[type="submit"] { 
+	border: 1px solid black; 
+	color: #ef9c00;
+background-color: #facd8a; }

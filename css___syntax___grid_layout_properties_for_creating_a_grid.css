@@ -1,0 +1,22 @@
+/*Properties for creating a grid 
+display                     Specifies the type of grid used for an HTML element. 
+                                Possible values include grid (rendered as a block) 
+                                and inline-grid (rendered as inline content).
+grid-template-rows          Specifies the size of the row tracks in a grid. 
+grid-template-columns       Specifies the size of the column tracks in a grid.
+grid-template               The shorthand property for setting the grid-template-rows 
+                                and grid-template-columns properties.
+grid-row-gap                Specifies the space between row tracks. 
+grid-column-gap             Specifies the space between column tracks.
+grid-gap                    The shorthand property for setting the grid-row-gap and 
+                                grid-column-gap properties.
+
+
+Description 
+• To define the rows and columns in a grid, you code one value for each 
+    row or column, and you separate the values with spaces. If you use 
+    the grid-template property, you code a forward slash (/) between the 
+    row and column values.
+• If you use the grid-gap property to specify the gutters, you can omit the 
+    column gutter if it’s the same as the row gutter.
+• By default, the grid items are laid out from left to right and top to bottom.                                

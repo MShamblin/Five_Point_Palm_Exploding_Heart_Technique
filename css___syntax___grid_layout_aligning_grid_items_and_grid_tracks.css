@@ -1,0 +1,40 @@
+/*How to align grid items and grid tracks
+
+
+Properties for horizontal alignment 
+justify-content         Horizontally aligns grid tracks within a container when the tracks are 
+                            less than the overall width of the container. The default is start.
+justify-items           Horizontally aligns grid items within a grid area. The default is stretch. 
+justify-self            Overrides the grid area’s horizontal alignment for an individual grid item.
+
+
+Properties for vertical alignment 
+align-content           Vertically aligns grid tracks within a container when the tracks are less 
+                            than the overall height of the container. The default is start.
+align-items             Vertically aligns grid items within a grid area. The default is stretch. 
+align-self              Overrides the grid area’s vertical alignment for an individual grid item.
+
+
+Common values for these properties 
+start                   Aligns grid items or grid tracks at the beginning of the container. 
+end                     Aligns grid items or grid tracks at the end of the container. 
+center                  Aligns grid items or grid tracks in the center of the container.
+stretch                 The grid items or grid tracks extend from the start of the container to 
+                            the end of the container.
+space-between           Allocates space evenly between grid tracks.         
+space-around            Allocates space evenly between grid tracks with half-size spaces before 
+                            the first grid track and after the last grid track.
+space-evenly            Allocates space evenly between grid tracks with full-size spaces before 
+                            the first grid track and after the last grid track.
+
+Description 
+• You can align the column tracks within a container horizontally, and you can 
+    align the row tracks vertically.
+• You can also align the grid items within a grid area horizontally and vertically, 
+    and you can override a grid area’s horizontal and vertical alignment for individual 
+    grid items.
+• If you specify stretch for the justify-content property, the grid tracks are stretched 
+    so they extend from the left side of the container to the right side of the container. 
+    If you specify stretch for the align-content property, the grid tracks are stretched so 
+    they extend from the top of the container to the bottom of the container.
+*/

@@ -1,0 +1,23 @@
+/* CSS that uses named lines to define the grid areas */
+body {
+	display: grid; 
+	...
+	grid-template-columns: [body-start nav-start] 200px [nav-end sec-start] 1fr [sec3-start] 1fr [sec-end main-end]; 
+	grid-template-rows: [row1-start] 80px [row2-start] 1fr [row3-start] 1fr [row4-start] 60px [rows-end]; 
+	grid-gap: 16px; }
+header { grid-row: row1-start/row2-start; grid-column: body-start/body-end; } 
+Nav { grid-row: row2-start/row4-start; grid-column: nav-start/nav-end; } 
+#s1 { grid-row: row2-start/row3-start; grid-column: sec-start/sec-end; } 
+#s2 { grid-row: row3-start/row4-start; grid-column: sec-start/sec3-start; }
+#s3 { grid-row: row3-start/row4-start; grid-column: column3-start/content-end; }
+footer { grid-row: row4-start/rows-end; grid-column: body-start/body-end; }
+
+
+/*
+Description
+To name the lines in a grid, you code the name or names of each line in brackets on the 
+grid-template-columns and grid-template-rows properties in the position they appear in the grid.
+
+To identify the rows and columns for a grid area that an element occupies, you code the line 
+names on the grid-row and grid-columns propertie
+*/

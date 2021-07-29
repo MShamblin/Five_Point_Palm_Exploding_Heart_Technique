@@ -1,0 +1,35 @@
+
+/* CSS style rules that select by element type, id, and class */
+/* All elements */
+* { margin: .5em 1em; }
+
+/* Elements by type */
+main {
+	border: 2px solid black; 
+	padding: 1em; 
+}
+h1 { 
+	font-family: Arial, sans-serif; 
+} 
+p { 
+	margin-left: 3em; 
+}
+
+/* One element by ID */
+#copyright { font-size: 80%; }
+
+/* Elements by class */
+.blue { color: blue; } 
+.right { text-align: right; }
+
+
+/*
+Description 
+	• You code a selector for all elements by coding the universal selector (*). 
+	• You code a selector for all elements of a specific type by naming the element. This is 
+		referred to as a type selector.
+	• You code a selector for an element with an id attribute by coding a hash character (#) 
+		followed by the id value.
+	• You code a selector for an element with a class attribute by coding a period followed 
+		by the class name. Then, the style rule applies to all elements with that class name.
+*/

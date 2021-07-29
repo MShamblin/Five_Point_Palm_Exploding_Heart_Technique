@@ -1,0 +1,14 @@
+/*  3 columns with default-sized gaps */
+article {
+	column-count: 3; 
+}
+
+
+/*
+Description 
+• At this writing, Firefox doesn’t support the column-span property. 
+• If you want the heading of an article to span the columns, you can code 
+    the HTML for the heading before the article. Then, you don’t have to use 
+    the column-span property. 
+• If the columns are too narrow, an article becomes harder to read.
+*/

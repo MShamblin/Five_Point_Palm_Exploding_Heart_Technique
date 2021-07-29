@@ -1,0 +1,26 @@
+
+/*  CSS style rules with relational selectors  */
+
+/*  Adjacent sibling  */
+h2+p { margin-top: .5em; }
+
+/*
+Description
+    • When you use relational selectors, you can often avoid the need for id or class attributes. 
+    • To select elements only when they are descendants of a higher-level element, use a descendant 
+        selector that consists of the higher element, a space, and the descendent element. 
+    • To select a sibling element that’s adjacent to another element, use an adjacent sibling 
+        selector that consists of the first element, a plus sign (+), and the sibling element. 
+    • To select elements only when they are child elements of the parent element, you can use a 
+        child selector that consists of the parent element, the greater than sign (>), and the 
+        child element. 
+    • To select any elements that are siblings to another element, you can use a general sibling 
+        selector that consists of the first element, a tilde (~), and the sibling element, but 
+        this can only be used by browsers that support CSS3.
+*/
+
+/*
+ Child elements are at the first level below a parent element. Sibling elements are at the same level. 
+    And descendent elements can be one or more levels below a parent element.
+*/
+

@@ -1,0 +1,4 @@
+/* CSS that sets the width of the body based on the width of the viewport */    
+body {
+	width: 95vw; 
+    margin: 0 auto; }

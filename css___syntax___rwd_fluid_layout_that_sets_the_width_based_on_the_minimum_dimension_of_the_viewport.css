@@ -1,0 +1,4 @@
+/* CSS that sets the width based on the minimum dimension of the viewport */
+body {
+	width: 95vmin; 
+margin: 0 auto; }

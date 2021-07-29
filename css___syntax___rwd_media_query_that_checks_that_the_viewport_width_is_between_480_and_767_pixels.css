@@ -1,0 +1,27 @@
+/* A media query that checks that the viewport width is between 480 and 767 pixels */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {...}
+
+/*
+Common properties for the screen media type
+width               The width of the viewport.
+height              The height of the viewport.
+device-width        The width of the display area of the device. 
+device-height       The height of the display area of the device.
+orientation         Landscape or portrait.
+ */
+
+/*
+Description 
+    • A media query is defined by a CSS3 @media selector. This selector specifies the media type for the 
+        query and, for the screen media type, one or more conditional expressions. If all of the conditions 
+        are true, the styles within the media query are applied to the page.
+    • Each conditional expression can check one of the properties listed above. These properties can also 
+        be prefixed with min-or max-.
+    • The screen size at which a media query is used to change the appearance of a page can be referred to 
+        as a breakpoint.
+    • Media queries are supported by all the current versions of all the major desktop browsers. That makes 
+        media queries easy to test in those browsers.
+    • Media queries are also supported by all the current versions of all mobile browsers. 
+    • If you include the only keyword, older browsers that don’t support media queries will check the media 
+        type but not the conditional expressions.
+*/

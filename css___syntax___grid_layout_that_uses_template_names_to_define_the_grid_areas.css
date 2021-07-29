@@ -1,0 +1,36 @@
+/* CSS that uses template names to define the grid areas */
+body {
+	display: grid;
+	grid-template-columns: 200px 1fr 1fr; 
+	grid-template-rows: 80px 1fr 1fr 60px; 
+	grid-gap: 16px; 
+	grid-template-areas: 
+		"head head head" 
+		"navi sec1 sec1" 
+		"navi sec2 sec3" 
+		"foot foot foot"; } 
+header { grid-area: head; } 
+nav       { grid-area: navi; }
+#s1       { grid-area: sec1; }
+#s2       { grid-area: sec2; }
+#s3       { grid-area: sec3; }
+footer  { grid-area: foot; }
+
+
+/*Properties for using template areas to define grid areas
+
+grid-template-areas 		Names the grid areas for the elements. A row is created for each string, 
+							and a column is created for each named cell in a string.
+grid-area					Identifies the named grid area that an element occupies. 
+
+/*
+Description
+All of the cells with the same name form a grid area that spans those cells.
+If you don’t want to include a cell in a grid area, you can code a 
+	period in place of a template name
+*/
+	grid-template-areas: 
+		"head head head" 
+		"navi sec1 sec1" 
+		"navi sec2 ." 
+		"foot foot foot";

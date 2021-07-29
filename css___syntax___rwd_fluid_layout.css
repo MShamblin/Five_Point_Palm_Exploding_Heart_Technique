@@ -1,0 +1,49 @@
+/* The CSS for a fluid layout */
+body {
+	width: 90%;                           /* changed from 960px */ 
+	max-width: 1024px;                    /* maximum width of page */
+	margin: 0 auto;
+	border: 2px solid black; }
+header { 
+	width: 96.875%;                       /* 930 ÷ 960 x 100 */ 
+	padding: 15px 1.5625%;                /* 15 ÷ 960 x 100 */
+	border-bottom: 2px solid black; } 
+main {
+	width: 59.375%;                       /* 570 ÷ 960 x 100 */ 
+	padding: 15px 1.5625%;                /* 15 ÷ 960 x 100 */
+	float: left; }
+aside { 
+	width: 34.375%;                       /* 330 ÷ 960 x 100 */ 
+	padding: 15px 1.5625%;                /* 15 ÷ 960 x 100 */
+	float: right; }
+footer {
+	clear: both; 
+	width: 96.875%;                       /* 930 ÷ 960 x 100 */ 
+	padding: 15px 1.5625%;                /* 15 ÷ 960 x 100 */
+border-top: 2px solid black; }
+
+/* A formula for converting pixels to percents */
+target ÷ context x 100 = result
+
+
+/*
+Description 
+• To convert the width of an element from pixels to a percent, you divide the width of that element 
+	(the target) by the width of its parent element (the context) and then multiply that value by 100. 
+• The width of the outermost element determines how much of the screen the page occupies. 
+	This width is typically set between 90% and 100%. • In addition to converting the widths of 
+	the structural elements on a page to percents, you should convert the left and right margins 
+	and padding to percents. However, you can’t specify the width of a border using a percent. 
+• To limit the width of an element, you can use the max-width property. This property is typically 
+	used to limit the width of the entire page.
+*/
+
+/*
+Relative units of measure for responsive design Symbol Name vh vw Description
+vh 		viewport height		One vh is equal to 1/100 of the height of the viewport.
+vw   	viewport width 		One vw is equal to 1/100 of the width of the viewport.
+vmin 	viewport minimum	One vmin is equal to 1/100 of the height or width of the viewport, depending on which is smaller.
+vmax  	viewport maximum 	One vmax is equal to 1/100 of the height or width of the viewport, depending on which is larger.
+*/
+
+

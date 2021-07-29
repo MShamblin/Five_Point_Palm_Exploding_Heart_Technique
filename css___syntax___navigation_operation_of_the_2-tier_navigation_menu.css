@@ -1,0 +1,24 @@
+/* The CSS for the operation of the 2-tier navigation menus */
+#nav_menu ul {
+	list-style: none;                /* Remove bullets from all ul elements */ 
+	position: relative; }            /* So the submenus can be positioned */
+#nav_menu ul li { float: left; }     /* Display items horizontally */
+#nav_menu ul ul { 
+	display: none;                   /* Don't display submenus until hover of li */
+	position: absolute; 
+	top: 100%;                       /* Position submenu at bottom of main menu */
+}
+#nav_menu ul ul li { float: none; }  /* Display submenus vertically */
+#nav_menu ul li:hover > ul {         /* Select ul child of li element */
+	display: block; }                /* Display submenu on hover of li element */ 
+#nav_menu > ul::after { 
+	content: "";                     /* Add empty content to the end of the first ul */
+	display: block;                  /* Display that content as a block element */
+	clear: both; }                   /* Stop the floating of the li elements */
+
+/*
+Description 
+• To create a multi-tier navigation menu, you code unordered lists 
+	within the li elements of another unordered list. In other words, 
+	you create a nested list.
+*/
