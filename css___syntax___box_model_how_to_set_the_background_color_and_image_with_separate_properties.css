@@ -1,0 +1,33 @@
+/* How to set the background color and image with separate properties */
+	background-color: blue;
+	background-image: url("../images/texture.gif");
+
+/*
+The properties for setting the background color and image 
+background 				Background color, image, repeat, attachment, and position values.
+background-color 		A color value or keyword that specifies the color of an element’s 
+							background. You can also specify the transparent keyword if 
+							you want elements behind the element to be visible. This is 
+							the default.
+background-image 		A relative or absolute URL that points to the image. You can also 
+							specify the keyword none if you don’t want to display an image. 
+							This is the default.
+background-repeat		A keyword that specifies if and how an image is repeated. Possible 
+							values are repeat, repeat-x, repeat-y, and no-repeat. The 
+							default is repeat, which causes the image to be repeated both 
+							horizontally and vertically to fill the background.
+background-attachment 	A keyword that specifies whether an image scrolls with the document 
+							or remains in a fixed position. Possible values are scroll and 
+							fixed. The default is scroll.
+background-position		One or two relative or absolute values or keywords that specify the 
+							initial horizontal and vertical positions of an image. Keywords 
+							are left, center, and right; top, center, and bottom. If a vertical 
+							position isn’t specified, center is the default. If no position 
+							is specified, the default is to place the image at the top-left 
+							corner of the element.
+*/
+
+/*
+Accessibility guideline 
+	• Don’t use a background color or image that makes the text that’s over it difficult to read.
+*/

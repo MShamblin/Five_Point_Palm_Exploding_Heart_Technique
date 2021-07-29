@@ -1,0 +1,40 @@
+/* float examples */
+
+/* Grid of Boxes / Equal Width Boxes */
+/* With the float property, it is easy to float boxes of content side by side: */
+
+
+/* Example */
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;            /* three boxes (use 25% for four, and 50% for two, etc) */
+  padding: 50px;            /* if you want space between the images */
+}
+
+/*
+The properties for floating image
+float			A keyword that determines how an image is floated. Possible values are left, right, and none. 
+					None is the default.
+clear 			A keyword that determines if an element that follows a floated element flows into the 
+					space left by the floated element. Possible values are left, right, both, and none. None is the default.
+*/
+
+
+/*
+Description 
+	• To float an image, you use the float property, and to set the margins around it, you use the 
+		margin property.
+	• In chapters 5 and 6, you’ll learn how to set margins and float elements, but this will give 
+		you an idea of how you can use an image in a header.
+	• When you float an image to the left, the block elements that follow it fill the space to the 
+		right of it. When the elements that follow get past the height of the image and its top and 
+		bottom margins, they flow into the space below the element.
+	• You can use the clear property to stop an element from flowing into the space alongside a 
+		floated element.
+	• For now, you can experiment with the size of the image to get the effect that you want, but 
+		in the next two chapters you’ll learn the right ways to get the same results.
+*/

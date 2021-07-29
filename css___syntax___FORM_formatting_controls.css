@@ -1,0 +1,38 @@
+/*  FORMS - Formatting Controls */
+
+body {
+    font: 90% Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+label {
+    color: navy;
+    float: left;
+    width: 8em;
+    font-weight: bold;
+    text-align: right;
+}
+input {
+    width: 15em;
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+input:focus {
+    border: 2px solid navy'
+}
+#button {
+    width: 7em;
+    box-shadow: 2px, 2px, 0 navy;
+    background-color: silver;
+}
+#button {
+    margin-left: 9.5em;
+}
+
+
+/*
+Description 
+	• You can use many of the properties you learned about in 
+        chapters 4 and 5 to format controls.
+	• You can use the :focus pseudo-class to change the appearance 
+        of a control when it has the focus.
+*/

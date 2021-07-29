@@ -1,0 +1,30 @@
+/*Properties for wrapping and aligning wrapped flex items 
+
+flex-wrap       Determines how flex items wrap if there is not enough room 
+                    for them within the flex container. Possible values are 
+                    nowrap, wrap, and wrap-reverse. The default is nowrap.
+align-content   Determines how lines of flex items are aligned within the 
+                    flex container. Possible values include stretch, 
+                    center, flex-start, flex-end, space-between, and 
+                    space-around. The default is stretch.
+flex-flow       The shorthand property for setting flex-direction and 
+                    flex-wrap. 
+
+The flex-flow property in this table is a shorthand property that can be used
+to set the flex-direction property and the flex-wrap property at the same time. 
+For instance, this CSS rule */
+
+    flex-flow: column wrap;
+
+/*sets the flex-direction property to column and the flex-wrap property to wrap.
+
+
+Description 
+• By default, flex items are not wrapped within a flex container. 
+    This causes the contents of flex items that are set to specific widths 
+    to wrap within the item or to get cut off.
+• By default, wrapped flex items extend from the top to the bottom of the 
+    flex container. You can change this vertical alignment using the 
+    align-content property.
+*/
+

@@ -1,0 +1,24 @@
+/* FORMS - Using Text Areas */
+
+textarea {
+    height: 5em;
+    width: 25em;
+    font-family: Arial, Helvetica, sand-serif;
+}
+
+/*
+Attributes of the textarea element 
+Attribute           Description 
+rows                The approximate number of rows in the text area. Not required in HTML5. 
+cols                The approximate number of columns in the text area. Not required in HTML5. 
+wrap                Specifies how the text should wrap. Possible values include soft and hard, 
+                        and soft is the default.
+*/
+
+/* 
+Description 
+	• A textarea field (or just text area) can be used to get multi-line text entries. 
+	• Any whitespace in the HTML for the content of a text area is shown in the value that’s displayed in the browser.
+	• To set the height and width for a text area, you should use the CSS height and width properties. If you use ems to specify the height, the text area will hold approximately as many lines as ems.
+	• If you use ems to specify the width, each line in the text area will provide for more characters than ems except for a mono-spaced font. That’s because an em is approximately the width of a capital M and most characters are narrower than that.
+*/

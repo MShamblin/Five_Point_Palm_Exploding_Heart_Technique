@@ -1,0 +1,25 @@
+/* The CSS for the two divisions using Chrome prefixes (-webkit-) */
+	#eg1 {
+		background-image: -webkit-linear-gradient( to right, white 0%, red 100%); }
+	#eg2 {
+		background-image: -webkit-linear-gradient( 45deg, red 0%, white 50%, blue 100%); }
+
+/*
+Description 
+	• The CSS3 for linear gradients lets you create gradients for backgrounds 
+		without using images.
+	• Today, all of the modern browsers provide some support for linear gradients. 
+		Except for Internet Explorer and Edge, though, they implement them with 
+		their own prefixes: -webkit-for WebKit browsers like Chrome and Safari, 
+		-moz-for Mozilla Firefox, and -o-for Opera. Later, when the final CSS3 
+		specification is set, these prefixes will be removed.
+	• The first parameter of a linear gradient indicates the direction the 
+		gradient will go: “to right” for left to right, “to bottom” for top to 
+		bottom, “to left” for right to left, “to top” for bottom to top, and a 
+		number of degrees if the gradient should be on an angle.
+	• The direction is followed by two or more parameters that consist of a color 
+		and a percent. The first percent indicates where the first color should 
+		start, the last percent indicates where the last color should end, and 
+		the percents in between indicate the points at which one gradient stops 
+		and the next one starts.
+*/

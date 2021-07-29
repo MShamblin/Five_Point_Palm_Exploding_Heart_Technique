@@ -1,0 +1,18 @@
+/* The syntax for the border-radius and box-shadow properties */
+    border-radius: radius; /* applies to all four corners */ 
+    border-radius: topLeft topRight lowerRight lowerLeft; 
+    box-shadow: horizontalOffset verticalOffset blurRadius spread color;
+
+/*
+Description 
+	• When you code the border-radius property, you can assign one rounding radius 
+		to all four corners or a different radius to each corner.
+	• When you code the box-shadow property, positive values offset the shadow to 
+		the right or down, and negative values offset the shadow to the left or up.
+	• The third value in the box-shadow property determines how much the shadow is 
+		blurred, and the fourth value determines how far the blur is spread.
+	• The fifth value in the box-shadow property specifies the color of the shadow. 
+		If this is omitted, it is the same color as the border.
+	• These properties are supported by all modern browsers. If they aren’t supported 
+		by a browser, they are ignored, which is usually okay.
+*/

@@ -1,0 +1,40 @@
+/* The CSS for a navigation menu with equal spacing between flex items */
+ul {
+	display: flex;
+	justify-content: space-between; 
+	list-style-type: none; 
+	background-color: silver; 
+}
+li {
+	background: #999; 
+	padding: 15px;
+	text-align: center; 
+} 
+a {
+	text-decoration: none; 
+	color: #000; 
+}
+
+/*
+Description 
+• The justify-content property determines how flex items are aligned along 
+	the main axis for a container when the items don’t use all the available space.
+*/
+
+/*
+The property for aligning flex items along the main axis
+justify-content 		Aligns flex items within a flex container along the main axis.
+*/
+
+/*
+Common values for the justify-content property 
+flex-start 				Aligns items at the beginning of the flex container. This is the default.
+flex-end 				Aligns items at the end of the flex container.
+center					Aligns items in the center of the flex container.
+space-between 			Allocates space evenly between flex items.
+space-around			Allocates space evenly between flex items with half-size spaces before 
+							the first item and after the last item.
+space-evenly			Allocates space evenly between flex items with full-size spaces before 
+							the first item and after the last item.
+*/
+

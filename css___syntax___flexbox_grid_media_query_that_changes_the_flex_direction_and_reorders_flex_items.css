@@ -1,0 +1,31 @@
+/* A media query that changes the flex direction and reorders flex items */
+@media screen and (max-width: 760px) { 
+	main { 
+		flex-direction: column; 
+	} 
+	section { 
+		order: 1; 
+	} 
+	aside {
+		order: 2; 
+	}
+}
+
+/*
+The property for changing the order of flex items 
+order		Sets the order of a flex item relative to other flex items 
+				within a flex container
+
+*/
+
+
+/*
+Description 
+• By default, the items within a flex container are displayed in the 
+	order in which they appear in the HTML. You can use the order 
+	property to change that.
+• The order property is particularly useful when developing a 
+	responsive design. It can be used to change the order of the 
+	flex items within a flex container when the items are displayed 
+	in a column in a narrow viewport.
+

@@ -1,0 +1,29 @@
+/* The position property specifies the type of positioning method used for an element.
+
+There are five different position values: */
+
+static
+relative
+fixed
+absolute
+sticky
+
+
+/*Elements are then positioned using the top, bottom, left, and 
+right properties. However, these properties will not work 
+unless the position property is set first. They also work 
+differently depending on the position value.*/
+
+/* 
+
+All CSS Positioning Properties
+Property	    Description
+bottom	        Sets the bottom margin edge for a positioned box
+clip	        Clips an absolutely positioned element
+left	        Sets the left margin edge for a positioned box
+position	    Specifies the type of positioning for an element
+right	        Sets the right margin edge for a positioned box
+top	            Sets the top margin edge for a positioned box
+z-index	        Sets the stack order of an element 
+
+*/

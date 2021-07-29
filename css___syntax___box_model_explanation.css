@@ -1,0 +1,48 @@
+/* The Box Model */
+
+/*
+The formula for calculating the height of a box 
+    top margin + top border + top padding + height + bottom padding + bottom border + bottom margin
+*/
+
+/*
+The formula for calculating the width of a box
+    left margin + left border + left padding + width + right padding + right border + right margin
+*/
+
+/*
+Description 
+    • The CSS box model lets you work with the boxes that a browser places around each block 
+        element as well as some inline elements. This lets you add formatting such as margins, 
+        padding, and borders.
+    • By default, the box for a block element is as wide as the block that contains it and as 
+        tall as it needs to be based on its content.
+    • You can use the height and width properties to specify the size of the content area for 
+        a block element explicitly.
+    • You can use other properties to control the margins, padding, and borders for a block 
+        element. Then, these properties are added to the height and width of the content area 
+        to determine the height and width of the box.
+*/
+
+/*The CSS for the page */
+body {
+    border: 3px dotted black; 
+    margin: 10px;
+} 
+main {
+    border: 2px solid black; 
+    width: 500px; 
+    margin: 20px; 
+    padding: 10px;
+} 
+h1, p {
+    border: 1px dashed black; 
+    padding: 10px;
+} 
+h1 {
+    margin: .5em 0 .25em; /* .5em top, 0 right and left, .25em bottom */ 
+    padding-left: 15px;
+} 
+p { margin: 0; 
+    padding-left: 15px; 
+} 

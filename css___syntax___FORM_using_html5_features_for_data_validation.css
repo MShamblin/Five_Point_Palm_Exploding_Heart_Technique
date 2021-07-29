@@ -1,0 +1,30 @@
+/* FORMS - Using HTML5 Features For Data Validation */
+
+
+
+/* The CSS3 pseudo-classes for required, valid, and invalid fields */
+    :required
+    :valid
+    :invalid
+
+/*  A CSS attribute selector for all controls with the required attribute */
+    input[required]
+
+
+
+
+
+
+/*
+Description 
+	• By default, the auto-completion feature is on in all modern browsers. 
+        That means that the browser will display entry options when the user 
+        starts an entry. These options will be based on previous entries 
+        for fields with similar names or ids.
+	• If the required attribute is coded for a field, the browser checks to 
+        see whether the field is empty when the form is submitted. If it is, 
+        the browser displays its default error message for the field. But 
+        what this message says and how it’s displayed are browser-dependent.
+	• To select all the input elements with the required attribute, you can 
+        also use the attribute selector shown above.
+*/

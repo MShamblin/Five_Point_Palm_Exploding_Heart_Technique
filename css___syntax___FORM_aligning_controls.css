@@ -1,0 +1,22 @@
+/* FORMS - Aligning Controls */
+
+
+label {
+    float: left;
+    width: 5em;
+    text-align: right;
+}
+input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+#button {
+    margin-left: 7em;
+}
+
+
+/*
+Description 
+	• If a form includes a series of controls and labels that identify them, you can align the labels by floating them to the left of the controls and setting a width that provides enough space for all the labels. Then, you can set a left margin for the controls to add space between the labels and the controls.
+	• A series of labels is typically more readable if the labels are aligned at the right. 
+*/

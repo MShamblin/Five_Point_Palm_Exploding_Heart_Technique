@@ -1,0 +1,71 @@
+/* The float Property
+The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+
+The float property can have one of the following values:
+left             The element floats to the left of its container
+right            The element floats to the right of its container
+none             The element does not float (will be displayed just where it occurs in the text). This is default
+inherit          The element inherits the float value of its parent
+
+
+In its simplest use, the float property can be used to wrap text around images. */
+
+img {
+    float: right;           /*  specifies that an image should float to the right in a text */
+}
+
+img {
+    float: left;            /*  specifies that an image should float to the left in a text */
+}
+
+img {
+    float: none;            /*  image will be displayed just where it occurs in the text  */
+}
+  
+
+/* Example - Float Next To Each Other  */
+/* Normally div elements will be displayed on top of each other. 
+However, if we use float: left we can let elements float next to each other: */
+
+
+
+div {
+    float: left;                
+    padding: 15px;
+  }
+  
+  .div1 {
+    background: red;
+  }
+  
+  .div2 {
+    background: yellow;
+  }
+  
+  .div3 {
+    background: green;
+  }
+
+/*
+The properties for floating image
+float			A keyword that determines how an image is floated. Possible values are left, right, and none. 
+					None is the default.
+clear 			A keyword that determines if an element that follows a floated element flows into the 
+					space left by the floated element. Possible values are left, right, both, and none. None is the default.
+*/
+
+
+/*
+Description 
+	• To float an image, you use the float property, and to set the margins around it, you use the 
+		margin property.
+	• In chapters 5 and 6, you’ll learn how to set margins and float elements, but this will give 
+		you an idea of how you can use an image in a header.
+	• When you float an image to the left, the block elements that follow it fill the space to the 
+		right of it. When the elements that follow get past the height of the image and its top and 
+		bottom margins, they flow into the space below the element.
+	• You can use the clear property to stop an element from flowing into the space alongside a 
+		floated element.
+	• For now, you can experiment with the size of the image to get the effect that you want, but 
+		in the next two chapters you’ll learn the right ways to get the same results.
+*/

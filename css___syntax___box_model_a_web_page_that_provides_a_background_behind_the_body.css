@@ -1,0 +1,73 @@
+/* The CSS for a web page that provides a background behind the body */
+/* The CSS for the web page*/
+/* the styles that provide the background behind the body */ 
+
+html 
+{
+    background-image: -webkit-linear-gradient( to bottom, white 0%, #facd8a 100%);
+    background-image: -moz-linear-gradient(to bottom, white 0%, #facd8a 100%); 
+    background-image: -o-linear-gradient(to bottom, white 0%, #facd8a 100%); 
+    background-image: linear-gradient(to bottom, white 0%, #facd8a 100%);
+} 
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 100%; 
+    width: 700px;
+    background-color: white; 
+    margin: 15px auto; 
+    padding: 15px 1.5em; 
+    border: 1px solid black; 
+    border-radius: 25px; 
+    box-shadow: 5px 5px 0 0;
+}   
+
+/* the styles for the other type selectors are the same as in figure 5-7 */
+/* the styles for the header */ 
+header {
+    padding-bottom: 1em;
+    border-bottom: 2px solid #f2972e; 
+} 
+header img { 
+    float: left; 
+} 
+header h2 {
+    font-size: 220%;   
+    color: #f2972e; 
+    text-align: center;
+    text-shadow: 2px 3px 0 black; 
+    margin-bottom: .25em; 
+}
+header h3 {
+    font-size: 130%; 
+    font-style: italic; 
+    text-align: center; 
+}
+
+/* the styles for the main content */ 
+main { 
+    clear: left; 
+} 
+main h1 {
+    font-size: 175%; 
+    margin: 1em 0 .35em; 
+} 
+main h2 { 
+    font-size: 130%; 
+}
+#contact_us { 
+    margin-top: 1em; 
+}  
+a.date_passed { 
+    color: gray; 
+}
+
+/* the styles for the footer */ 
+footer {
+    margin-top: 2em;
+    border-top: 2px solid #f2972e; 
+    padding-top: .7em; 
+}
+footer p {
+    font-size: 80%; 
+    text-align: right; 
+} 

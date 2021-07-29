@@ -1,0 +1,30 @@
+/* How to set the width, style, and color of border sides */
+	border-bottom-width: 4px; 
+	border-right-style: dashed; 
+	border-left-color: gray;
+
+/*
+Properties for setting borders 
+border					A border width, border style, and border color. The values 
+							are applied to all sides of the border.
+border-side 			Border width, style, and color values for the specified side 
+							of a border.
+border-width			One to four relative or absolute values (excluding a percent) 
+							or keywords that specify the widths for each side of a 
+							border. Possible keywords are thin, medium, and thick.
+border-style			One to four keywords that specify the styles for each side 
+							of a border. Possible values are dotted, dashed, solid, 
+							double, groove, ridge, inset, outset, and none. The 
+							default is none.
+border-color 			One to four color values or keywords that specify the color 
+							for each side of a border. The default is the color of 
+							the element.
+border-side-width 		A relative or absolute value (excluding a percent) or a 
+							keyword that specifies the width of the indicated side 
+							of a border.
+border-side-style 		A keyword that specifies the style for the indicated side of 
+							a border. 
+border-side-color		One to four color values or keywords that specify the color 
+							for each side of a border. The default is the color of 
+							the element.
+*/

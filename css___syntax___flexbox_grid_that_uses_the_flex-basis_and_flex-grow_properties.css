@@ -1,0 +1,28 @@
+/* CSS that uses the flex-basis and flex-grow properties */
+nav, aside {
+	flex-basis: 100px; 
+	flex-grow: 1; 
+}
+section {
+	flex-basis: 200px; 
+	flex-grow: 3; 
+
+/*
+Description 
+• You can use the flex-basis, flex-grow, and flex-shrink properties 
+    to determine the initial lengths of the flex items in a flex container 
+    as well as the lengths of the items as the screen size changes.
+• The flex-grow and flex-shrink properties don’t specify traditional CSS 
+    units of measure like pixels, percents, or ems. Instead, they specify 
+    a number that represents a proportion of the available space in a 
+    flex container relative to other flex items.
+• To set the length of the flex items so their size is the same relative 
+    to each other as the size of the screen changes, set the flex-basis 
+    property of each item to a relative unit of measure such as percents.
+• The flex-grow property is used when there’s more space available within 
+    a container than what’s specified by the flex-basis properties for 
+    all flex items. Then, you can determine the length of a flex item that 
+    uses the flex-grow property by taking the ratio of the flex-grow value 
+    to the total flex-grow values for all items, multiplying by the 
+    unallocated space, and adding that value to the flex-basis value.
+/*

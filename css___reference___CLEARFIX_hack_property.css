@@ -1,0 +1,19 @@
+/* The clearfix Hack  
+If a floated element is taller than the containing element, 
+it will "overflow" outside of its container. We can then add a clearfix hack to solve this problem: */
+
+/* Example */
+.clearfix {
+    overflow: auto;
+  }
+  
+  /* The overflow: auto clearfix works well as long as you are able to keep 
+  control of your margins and padding (else you might see scrollbars). 
+  The new, modern clearfix hack however, is safer to use, and the following 
+  code is used for most webpages: */
+  
+  .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }

@@ -1,0 +1,45 @@
+/* How to set the minimum and maximum width and height */
+	min-width: 450px; 
+	max-width: 600px; 
+	min-height: 120px; 
+    max-height: 160px;
+
+/*
+Properties for setting heights and widths 
+width 		A relative or absolute value that specifies the width of the 
+				content area for a block element. You can also specify 
+				auto if you want the width of the box calculated for you 
+				based on the width of its containing block. This is the default.
+height 		A relative or absolute value that specifies the height of the 
+				content area for a block element. You can also specify 
+				auto if you want the height of the area calculated for you 
+				based on its content. This is the default.
+min-width 	A relative or absolute value that specifies the minimum width of 
+				the content area for a block element. The area will always 
+				be at least this wide regardless of its content.
+max-width 	A relative or absolute value that specifies the maximum width 
+				of the content area for a block element. You can also specify 
+				none to indicate that there is no maximum width.
+min-height 	A relative or absolute value that specifies the minimum height of 
+				the content area for a block element. The area will always be 
+				at least this tall regardless of its content.
+max-height	A relative or absolute value that specifies the maximum height of 
+				the content area for a block element. You can also specify none
+				to indicate that there is no maximum height.
+*/
+
+/*
+Description 
+	• If you specify a percent for the width property, the width of the content 
+		area for the block element is based on the width of the block that contains 
+		it, called the containing block. In that case, the width of the containing 
+		block must be specified explicitly.
+	• If you specify a percent for the height property, the height of the content 
+		area for the block element is based on the height of the containing block. 
+		In that case, the height of the containing block must be specified explicitly. 
+		Otherwise, “auto” is substituted for the percent.
+	• The min-width, max-width, min-height, and max-height properties can be used 
+		to accommodate a change in font size. The min-height property can also be 
+		used to be sure that an element has the specified height even if the content 
+		doesn’t fill the element.
+*/

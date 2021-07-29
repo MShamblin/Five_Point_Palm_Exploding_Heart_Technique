@@ -1,0 +1,49 @@
+/* The CSS for a navigation menu that’s centered vertically in a container */
+ul {
+	display: flex;
+	align-items: center; 
+	list-style-type: none; 
+	background: silver; 
+	height: 90px; 
+}
+li {
+	background: #999; 
+	width: 125px;
+	margin: 0 15px 0 0; 
+	padding: 5px;
+	text-align: center; 
+} 
+a {
+	text-decoration: none; 
+	color: #000; 
+}
+#home { 
+	align-self: flex-start; 
+} 
+
+/*
+Description 
+• The align-items property determines how flex items are aligned along the 
+	cross axis for a container, and the align-self property overrides this 
+	alignment for specific items.
+*/
+
+/*
+Properties for aligning flex items along the cross-axis 
+align-items 			Aligns flex items within a flex container along the cross axis.
+align-self				Overrides the container’s cross-axis alignment for an individual 
+							flex item.
+*/
+
+/*
+Common values for the align-items and align-self properties 
+stretch 				The flex items extend from the start of the flex container to the end 
+							of the flex container. This is the default for a flex container.
+center					The flex items are centered in the flex container.
+flex-start 				The flex items are aligned at the start of the flex container.
+flex-end 				The flex items are aligned at the end of the flex container.
+baseline 				The content within each flex item is aligned at the bottom.
+auto					For align-self items only: The item is aligned as specified by 
+							the align-items property of the flex container. This is the default.
+*/
+

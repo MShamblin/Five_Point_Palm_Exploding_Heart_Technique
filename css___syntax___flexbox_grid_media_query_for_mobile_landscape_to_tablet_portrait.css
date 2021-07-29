@@ -1,0 +1,30 @@
+/* The media queries for mobile layouts */
+/* the media query for mobile landscape to tablet portrait */ 
+@media only screen and (max-width: 767px) { 
+header {
+	display: flex;
+	flex-direction: column;                      /* display flex items in a column */ 
+	align-items: center;                         /* center each item within the column */
+}
+header h2, header h3, header img { 
+	margin-left: 0;
+}
+header img { 
+	float: none; 
+	flex-basis: 25%;
+} 
+main { 
+	flex-direction: column; 
+} 
+article {
+	order: 2; 
+}
+article img { 
+	float: left; 
+	width: 50%;
+	margin-right: 2%; 
+} 
+aside {
+	order: 1; 
+	margin: 0;
+} }

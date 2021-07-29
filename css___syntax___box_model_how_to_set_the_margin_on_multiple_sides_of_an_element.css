@@ -1,0 +1,39 @@
+/* How to set the margins on multiple sides of an element */
+	margin: 1em;                 /* all four sides */ 
+	margin: 0 1em;               /* top and bottom 0, right and left 1em */
+	margin: .5em 1em 2em;        /* top .5em, right and left 1em, bottom 2em */
+	margin: .5em 1em 2em 1em;    /* top .5em, right 1em, bottom 2em, left 1em */
+
+
+/*
+Properties for setting margins 
+margin-top 			A relative or absolute value that defines the space between 
+						the top border of an element and the top of the containing 
+						block or the bottom of the element above it.
+margin-right 		A relative or absolute value that defines the space between the 
+						right border of an element and the right side of the containing
+						block or the left side of the element to its right.
+margin-bottom 		A relative or absolute value that defines the space between the 
+						bottom border of an element and the bottom of the containing 
+						block or the top of the element below it.
+margin-left 		A relative or absolute value that defines the space between the 
+						left border of an element and the left side of the containing 
+						block or the right side of the element to its left.
+margin				One to four relative or absolute values that specify the size of 
+						the margins for a box. One value is applied to all four margins.
+						Two values are applied to the top and bottom and right and left 
+						margins. Three values are applied to the top, right and left, and 
+						bottom margins. And four values are applied to the top, right, 
+						bottom, and left margins (think trouble).
+*/
+
+/*
+Description 
+	• If you specify a bottom margin for one element and a top margin for the 
+		element that follows in the HTML, the margins are collapsed, which means 
+		that only the larger margin is applied.
+	• You typically use the “auto” keyword to center an element in its containing 
+		block. To do that, you must also specify the width of the element.
+	• Because different browsers have different default margins for block elements, 
+		you often need to set these margins explicitly.
+*/
