@@ -1,0 +1,44 @@
+The HTML for the table with merged cells
+<table>
+    <thead> 
+        <tr>
+            <th rowspan="2">Book</th> 
+            <th colspan="4">Sales</th>
+        </tr> 
+        <tr>
+            <th>North</th> 
+            <th>South</th> 
+            <th>West</th> 
+            <th>Total</th>
+        </tr>
+    </thead> 
+    <tbody> 
+        . 
+        .
+    </tbody> 
+    <tfoot> 
+            <tr>
+                <th>Sales Totals</th> 
+                <td>$140,775</td> 
+                <td>$165,550</td> 
+                <td>$762,794</td> 
+                <td>$1,069,119</td>
+            </tr> 
+    </tfoot> 
+</table>
+
+
+<!--
+    Attributes of the <th> and <td> tags for merging cells
+    colspan         Identifies the number of columns that a cell will span. The default is 1.
+    rowspan         Identifies the number of rows that a cell will span. The default is 1.
+ 
+-->
+
+<!--
+ To merge cells, you use the two attributes of the th and td elements that are summarized in 
+    this figure. To merge cells so a cell in a row spans two or more columns, you use the 
+    colspan attribute. To merge cells so a cell in a column spans two or more rows, you use 
+    the rowspan attribute. The value you use for these attributes indicates the number of 
+    cells that will be merged.
+-->

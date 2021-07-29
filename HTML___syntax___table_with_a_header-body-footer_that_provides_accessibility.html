@@ -1,0 +1,48 @@
+<!-- The HTML for a table that provides for accessibility -->
+	<table>
+		<caption>Total sales for books published from 2012 to 2017</caption> 
+		<thead> 
+			<tr>
+				<th id="hdr_book" scope="col">Book</th> 
+				<th id="hdr_year" scope="col">Year Published</th> 
+				<th id="hdr_sales" scope="col">Sales</th>
+			</tr>
+		</thead> 
+		<tbody> 
+			<tr>
+				<td headers="hdr_book">PHP and MySQL</td> 
+				<td headers="hdr_year">2017</td> 
+				<td headers="hdr_sales">$372,381</td>
+			</tr> 
+			<tr>
+				<td headers="hdr_book">JavaScript and jQuery</td> 
+				<td headers="hdr_year">2017</td> 
+				<td headers="hdr_sales">$305,447</td>
+			</tr>
+		</tbody> 
+		<tfoot> 
+			<tr>
+				<th id="hdr_total" scope="row">Total Sales</th> 
+				<td></td> 
+				<td headers="hdr_sales hdr_total">$2,054,786</td>
+			</tr>
+		</tfoot> 
+	</table>
+
+<!--
+	Attributes that can be used for accessibility
+	caption		Describes the contents of the table. The other alternative is to 
+					treat the table as a figure and use the figcaption element to 
+					describe the table.
+	headers 	Identifies one or more header cells that describe the content of the cell.
+	scope		A keyword that tells if a cell is associated with a column or row. Common 
+					keywords are col and row. You can also use the keyword rowgroup to 
+					refer to merged cells.
+-->
+
+<!--
+	
+Accessibility guideline 
+	• Use the attributes listed above to make a table more accessible to visually-impaired users who use screen readers.
+
+-->

@@ -1,0 +1,40 @@
+<!-- HTML___syntax___media_an_object_element_for_playing_an_mp4_file  -->
+
+<object type="video/mp4" data="media.sjv_speakers_sampson.mp4"
+        width="480" height="270">
+    <param name="autoplay" value="true">
+</object>   
+
+
+<!--
+The object and param elements 
+Element         Description 
+object          Embeds a media file into a web page.
+param           Provides parameters to the media player 
+                    that’s used to open a file.
+
+
+Attributes of the object element 
+Attribute       Description 
+type            The MIME type of the file. 
+data            The URL of the file.
+width           The width of the file or the media player that’s used. 
+height          The height of the file or the media player that’s used.
+
+
+Attributes of the param element 
+Attribute       Description 
+name            The name of the parameter. Each media player 
+                    has its own parameters.
+value           The value of the parameter
+-->
+
+<!--
+Description 
+	• When you use the object element, you can control the appearance and operation of the media player by coding parameter elements. These elements are standard HTML.
+	• If you don’t specify the MIME type for a file, the file will be opened in the brows-er’s default media player for the media type.
+	• Because different players accept different parameters, you typically specify the parameters for all the players you want to provide for. Then, if a player doesn’t support a parameter, it will ignore it.
+	• If you don’t want to display the interface for a media player, you can omit the width and height attributes or set them to 0.
+	• Some browsers require a param element that specifies the URL of the file even if the file is identified in the object element.
+	• The object element is rarely used today thanks in large part to the video and audio elements in HTML5.
+-->

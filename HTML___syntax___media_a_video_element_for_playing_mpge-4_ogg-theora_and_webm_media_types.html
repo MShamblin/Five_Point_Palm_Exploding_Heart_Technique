@@ -1,0 +1,39 @@
+<!-- HTML___syntax___media_a_video_element_for_playing_mpge-4_ogg-theora_and_webm_media_types  -->
+
+
+    <video id="videoplayer" width="480" height="270" controls autoplay>
+        <source src="media/sjv_speakers_sampson.mp4">
+        <source src="media/sjv_speakers_sampson.webm" type='video/webm; codecs="vp9, opus"'>
+        <source src="media/sjv_speakers_sampson.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+    </video>
+    
+        
+
+<!--
+Common attributes for the audio and video elements 
+Attribute               Description 
+src                     The URL of the file to be played. 
+poster                  Supported only by the video element, this attribute provides the path to a 
+                            static image to be displayed in place of the video file before it is played.
+preload                 One of three possible values that tell the browser whether to preload any data: 
+                            none (the default), metadata (only preload metadata like dimensions and 
+                            track list), or auto (preload the entire media file)
+autoplay                Starts playing the media as soon as the web page is loaded in the browser.                         
+loop                    Causes the media to repeat playing when it reaches the end.               
+muted                   Supported only by the video element, this attribute causes the video to begin 
+                            playing (if autoplay is also coded) with the volume muted.  
+controls                Displays the default control toolbar underneath the audio or video being played. 
+width                   Specifies the width of the media file to be played within the browser. 
+height                  Specifies the height of the media file to be played within the browser.
+
+
+The attributes for the source element 
+Attribute           Description 
+src                 The URL of the file to be played. 
+type                The optional MIME type of the file to be played, including the codec for video files
+
+Description 
+	• The video and audio elements play the various media types natively within a browser. 
+	• To play a video on any modern browser, all that’s needed is a src attribute that refers 
+        to an MP4 file. To play audio, all that’s needed is a src attribute that refers to an MP3 file.
+-->

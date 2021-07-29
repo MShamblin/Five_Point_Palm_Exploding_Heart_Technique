@@ -1,0 +1,109 @@
+<!-- The HTML for the table -->
+	<table>
+		<thead> 
+			<tr>
+				<th rowspan="2">Book</th> 
+				<th colspan="4">Sales</th>
+			</tr> 
+			<tr>
+				<th>North</th> 
+				<th>South</th> 
+				<th>West</th> 
+				<th>Total</th>
+			</tr>
+		</thead> 
+		<tbody> 
+			. 
+			.
+		</tbody> 
+		<tfoot> 
+			<tr>
+				<th>Sales Totals</th> 
+				<td>$140,775</td> 
+				<td>$165,550</td> 
+				<td>$762,794</td> 
+				<td>$1,069,119</td>
+			</tr> 
+		</tfoot> 
+</table>
+
+<!--
+	Common elements for coding tables
+	table			Defines a table. The other elements for the table are coded within this element
+	tr 				Defines a row.
+	th 				Defines a header cell within a row. 
+	td				Defines a data cell within a row
+-->
+
+<!--
+	The elements for coding the header, body, and footer 
+	thead 			Groups one or more rows into a table header. 
+	tbody			Groups the rows between the header and footer into a table body.
+	tfoot			Groups one or more rows into a table footer
+ -->
+
+<!--
+	A introduction to tables
+	To start, a table consists of one or more rows and columns. You define a table by 
+		defining its rows. Then, within each row, you define a cell for each column. 
+	Within each row, a table can contain two different kinds of cells. Header cells 
+		identify what’s in the columns and rows of a table, and data cells contain the 
+		actual data of the table. For example, the three cells in the first row of the 
+		table in this figure are header cells that identify the contents of the columns. 
+		In contrast, the cells in the next four rows are data cells. The last row starts 
+		with a header cell that identifies the contents of the cells in that row. 
+	In broad terms, a table starts with a header that can consist of one or more rows. 
+		Then, the body of the table presents the data for the table. Last, the footer 
+		provides summary data that can consist of one or more rows. For accessibility, 
+		a table should also have a caption above or below it that summarizes what’s in 
+		the table.
+-->
+
+<!--
+	How to Create a Table
+	To define each row in a table, you use the tr (table row) element. Within each row, 
+		you code one th (table header) or td (table data) element for each cell in the 
+		row. You can see how this works in the table in this figure. In the last row, n
+		ote that the first cell is coded as a th element. That’s because it identifies 
+		the data in the last row. 
+	By default, the content of a header cell is boldfaced and centered in the cell, 
+		and the content of a data cell is left-aligned. Also, the width of the cells 
+		is determined by the data they contain, with each cell in a column being as 
+		wide as the widest cell.
+-->
+<!--
+	How to add a header and footer
+	To code a header, you simply code the rows that make up the header between the 
+		opening and closing tags of the thead element. Similarly, you code a footer 
+		by coding rows within a tfoot element. And you code a body by coding rows 
+		within a tbody element. 
+-->
+
+
+
+
+
+<!--
+Description 
+	• By default, the width of each column in a table is determined automatically based on its content.
+	• By default, the content of a th element is boldfaced and centered, and the content of a td element is left-aligned
+-->
+
+<!--
+Description 
+	• A table consists of rows and columns that intersect at cells. 
+	• Cells that contain the data of the table are called data cells. 
+	• Cells that identify the data in a column or row are called header cells. 
+	• The header for a table can consist of more than one row, and the footer 
+		for a table can consist of more than one row.
+	• The body of a table, which contains the data, usually consists of two 
+		or more rows. 
+	• Now that CSS can be used for page layout, you should only use tables for tabular data.
+-->
+
+<!--
+Description 
+	• The thead, tbody, and tfoot elements make it easier to style a table with CSS. 
+	• You can code the thead, tbody, and tfoot elements in any sequence and the header 
+		will always be displayed first and the footer last.
+-->

@@ -1,0 +1,43 @@
+<!-- Examples of absolute and relative -->
+
+<!-- Absolute URLs -->
+http://www.murach.com/index.html 
+http://www.murach.com/books/php/toc.html
+
+
+<!-- Root-relative paths -->
+/login.html                            <!-- (refers to root/login.html) -->
+/images/logo.gif                       <!-- (refers to root/images/logo.gif) -->
+
+<!-- Document-relative paths that navigate down from the root folder -->
+images/logo.gif                        <!-- (refers to root/images/logo.gif) -->
+books/php/overview.html                <!-- (refers to root/books/php/overview.html) -->
+
+<!-- Document-relative paths that navigate up from the root/books folder -->
+../index.html                          <!-- (refers to root/index.html) -->
+../images/logo.gif                     <!-- (refers to root/images/logo.gif) -->
+
+<!--
+Description 
+    • When you code an absolute URL, you code the complete URL including the 
+        domain name for the site. Absolute URLs let you display pages at other 
+        websites.
+    • When you code a relative URL, you base it on the current folder, which 
+        is the folder that contains the current page.
+    • A root-relative path is relative to the root folder of the website. 
+        It always starts with a slash. Then, to go down one subfolder, you 
+        code the subfolder name and a slash. To go down two subfolders, you 
+        code a second subfolder name and another slash. And so on.
+    • A document-relative path is relative to the folder the current 
+        document is in. Then, to go down one subfolder, you code the subfolder 
+        name followed by a slash. To go down two subfolders, you code a second 
+        subfolder name followed by another slash. And so on.
+    • You can also go up in a document-relative path. To go up one level from 
+        the current folder, you code two periods and a slash. To go up two levels, 
+        you code two periods and a slash followed by two more periods and a slash. 
+        And so on.
+-->
+
+
+
+-->

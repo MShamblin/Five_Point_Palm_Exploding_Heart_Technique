@@ -1,0 +1,40 @@
+A table with another table nested within one of its cells
+
+The HTML for the table 
+    <table id="outer">
+        <caption>YTD Sales by Region</caption> 
+        <tr>
+            <th>Region</th> 
+            <th>YTD sales</th>
+        </tr> 
+        <tr>
+            <th>West</th> 
+            <td>$68,684.34</td>
+        </tr> 
+        <tr>
+            <th>Central</th> 
+            <td>
+                <table id="inner"> 
+                    <tr>
+                        <th>North</th> 
+                        <td>$21,223.08</td>
+                    </tr> 
+                    <tr>
+                        <th>South</th> 
+                        <td>$41,274.06</td>
+                    </tr> 
+                </table> 
+            </td>
+        </tr> 
+        <tr>
+            <th>East</th> 
+            <td>$72,741.06</td> 
+        </tr> 
+    </table>
+
+<!--     
+Description 
+    • You can nest one table within another table by coding a table element within a td element.
+    • Nested tables were used frequently when tables were used for page layout. 
+        Now that tables should only be used for tabular data, you should rarely need nesting
+-->
