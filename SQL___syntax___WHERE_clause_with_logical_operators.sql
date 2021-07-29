@@ -1,0 +1,3 @@
+-- The syntax of the WHERE clause with logical operators 
+
+WHERE [NOT] search_condition_1 {AND|OR} [NOT] search_condition_2 ... 
